@@ -63,9 +63,10 @@ public class PlayerMovement : MonoBehaviour
         private void OnCollisionEnter(Collision collision)
     {
 
-        //if ontop of object
+        //if on top of object
         if (collision.gameObject.tag == "Env")
         {
+            //set grounded to true so the objects know the feet are on top of something
             isGrounded = true;
         }
 
