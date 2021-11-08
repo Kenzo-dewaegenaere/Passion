@@ -6,20 +6,14 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
         
- public Rigidbody rig;
+    public Rigidbody rig;
 
     [Header("Speed")]
     public float moveSpeed;
 
-    private bool isGrounded = true;
-
-   
-
-
-
     [Header("Jumping")]
     public float jumpForce;
-
+    private bool isGrounded = true;
 
 
     // Start is called before the first frame update
@@ -33,41 +27,34 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-
         calculateMovement();
-
-
     }
 
     void calculateMovement()
     {
-        //Get inputs
-        float x = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
-        float z = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
+
+        //get inputs
+        float moveVertical = Input.GetAxis("Vertical");
+        float moveHorizontal = Input.GetAxis("Horizontal");
+
+        //get pos
+        Vector3 newPosition = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
         //direction
-        Vector3 directrion = new Vector3(x, z, 0f);
+        if (moveVertical != 0 || moveHorizontal != 0)
+        {
 
-        //Move
-        transform.Translate(x, 0, z);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(newPosition), 0.025F);
+        transform.Translate(newPosition * moveSpeed * Time.deltaTime, Space.World);
+
+        }
 
         //Jump
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-
             rig.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isGrounded = false;
         }
-
-        //Rotation
-        if (x != 0 || z != 0)
-        {       
-        
-        // rig.transform.rotation = Quaternion.Slerp(rig.transform.rotation, Quaternion.LookRotation(new Vector3(x, 0, z), Vector3.up), Time.deltaTime * 40f);
-            //rig.transform.rotation = rot;
-
-        }
-
 
     }
 
