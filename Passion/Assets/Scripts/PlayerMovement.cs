@@ -5,25 +5,28 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-        
-    public Rigidbody rig;
+  
+    public CharacterController controller;
+    public Transform cam;
 
     [Header("Speed")]
-    public float moveSpeed;
+    public float speed =5f;
+    public float turnSmoothTime = .1f;
+    float turnSmoothVelocity;
 
     [Header("Jumping")]
-    public float jumpForce;
+    public float jumpHeight = 6f;
+    public float gravity = -12f;
+    public float velocityY;
     private bool isGrounded = true;
 
 
-    // Start is called before the first frame update
-    void Start()
+    void start()
     {
-
-        rig = GetComponent<Rigidbody>();
-   
-
+        controller = GetComponent<CharacterController>();
     }
+
+
 
     void Update()
     {
@@ -33,44 +36,53 @@ public class PlayerMovement : MonoBehaviour
     void calculateMovement()
     {
 
+
         //get inputs
-        float moveVertical = Input.GetAxis("Vertical");
-        float moveHorizontal = Input.GetAxis("Horizontal");
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
 
-        //get pos
-        Vector3 newPosition = new Vector3(moveHorizontal, 0.0f, moveVertical);
+        //get direction and normalize it
+        Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+        
 
-        //direction
-        if (moveVertical != 0 || moveHorizontal != 0)
+        if (direction.magnitude >= .1f)
         {
+            //get the angle player is looking at
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
 
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(newPosition), 0.025F);
-        transform.Translate(newPosition * moveSpeed * Time.deltaTime, Space.World);
+            //rate to angle
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
+            //move to angle
+            Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward +Vector3.up * velocityY;
+            controller.Move(moveDirection.normalized * speed * Time.deltaTime);
         }
 
-        //Jump
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        //jump
+
+        velocityY += Time.deltaTime * gravity;
+
+        if (controller.isGrounded)
         {
-            rig.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isGrounded = false;
+            velocityY = 0;
+        }
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            Jump();
+            Debug.Log("in air");
+
         }
 
     }
 
+    void Jump() {
 
-
-        private void OnCollisionEnter(Collision collision)
-    {
-
-        //if on top of object
-        if (collision.gameObject.tag == "Env")
+        if (controller.isGrounded)
         {
-            //set grounded to true so the objects know the feet are on top of something
-            isGrounded = true;
+            velocityY = 0;
         }
-
     }
-
 
 }   
