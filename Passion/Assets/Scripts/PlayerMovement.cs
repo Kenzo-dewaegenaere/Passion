@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             Jump();
-            Debug.Log("in air");
+           // Debug.Log("in air");
 
         }
 
