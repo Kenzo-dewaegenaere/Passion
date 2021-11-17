@@ -23,6 +23,7 @@ public class ItemPickup : MonoBehaviour
 
                 Destroy(gameObject);
 
+
             }
 
         }
