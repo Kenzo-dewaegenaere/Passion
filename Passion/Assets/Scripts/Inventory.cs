@@ -7,7 +7,7 @@ public class Inventory : MonoBehaviour
 {
 
     //pre-defined slots
-    private const int slots = 8;
+    private const int slots = 9;
 
     //create new list
     private List<InventoryItems> listItems = new List<InventoryItems>();
