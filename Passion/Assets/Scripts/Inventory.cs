@@ -7,7 +7,7 @@ public class Inventory : MonoBehaviour
 {
 
     //pre-defined slots
-    private const int slots = 9;
+    private const int slots = 8;
 
     //create new list
     private List<InventoryItems> listItems = new List<InventoryItems>();
@@ -24,6 +24,7 @@ public class Inventory : MonoBehaviour
         if (listItems.Count < slots)
         {
 
+            //get the colider component and check if enebled
             Collider collider = (item as MonoBehaviour).GetComponent<Collider>();
             if (collider.enabled)
             {
