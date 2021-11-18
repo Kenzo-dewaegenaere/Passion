@@ -3,11 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
   
     public CharacterController controller;
     public Transform cam;
+
+    [Header("Hud")]
+    public HUD Hud;
+
+
+    [Header("Inventory")]
+    public Inventory inventory;
+
 
     [Header("Speed")]
     public float speed =5f;
@@ -15,11 +23,12 @@ public class PlayerMovement : MonoBehaviour
     float turnSmoothVelocity;
 
     [Header("Jumping")]
-    public float jumpHeight = 6f;
-    public float gravity = -12f;
+    public float jumpHeight = 10f;
+    public float gravity = -15f;
+   
     public float velocityY;
-    private bool isGrounded = true;
 
+  //private Vector3 velocity;
 
     void start()
     {
@@ -31,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         calculateMovement();
+
     }
 
     void calculateMovement()
@@ -59,30 +69,48 @@ public class PlayerMovement : MonoBehaviour
             controller.Move(moveDirection.normalized * speed * Time.deltaTime);
         }
 
-        //jump
+
+        //gravity
 
         velocityY += Time.deltaTime * gravity;
 
         if (controller.isGrounded)
         {
-            velocityY = 0;
+           velocityY = 0;
         }
 
-        if (Input.GetButtonDown("Jump"))
-        {
-            Jump();
-           // Debug.Log("in air");
+        
+        //if (Input.GetButtonDown("Jump") && controller.isGrounded)
+        //// (-0.5) change this value according to your character y position + 1
+        //{
+        //    velocity.y = jumpHeight;
+           
+        //}
+        //else
+        //{
+        //    velocity.y += gravity * Time.deltaTime;
+        //}
+        //controller.Move(velocity * Time.deltaTime);
 
-        }
+
 
     }
 
-    void Jump() {
 
-        if (controller.isGrounded)
+
+    //check if player controller hits items
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        //get the item component
+        InventoryItems item = hit.collider.GetComponent<InventoryItems>();
+
+        //if the item excists
+        if (item != null)
         {
-            velocityY = 0;
+            //Debug.Log("hit");
+
+            //add item to the list
+            inventory.AddItem(item);
         }
     }
-
 }   

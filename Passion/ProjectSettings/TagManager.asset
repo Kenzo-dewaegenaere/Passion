@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - NPC
   - chest
+  - Item
   layers:
   - Default
   - TransparentFX
