@@ -96,12 +96,29 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Enemy")
-        {
+    bool triggerEntered = false;
 
-            Debug.Log("is atackable");
+    IEnumerator OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "Enemy")
+        {
+            triggerEntered = true;
+
+            //Decrease while triggerEntered is true
+            while (triggerEntered)
+            {
+
+
+                Debug.Log("hit");
+
+                yield return new WaitForSeconds(1);
+              
+            }
+        }
+        else
+        {
+            triggerEntered = false;
+            Debug.Log("No hit");
         }
     }
 
@@ -115,10 +132,13 @@ public class PlayerController : MonoBehaviour
         //if the item excists
         if (item != null)
         {
-            //Debug.Log("hit");
+            
 
             //add item to the list
             inventory.AddItem(item);
         }
+
+
+
     }
 }   

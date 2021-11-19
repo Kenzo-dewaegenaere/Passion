@@ -122,6 +122,20 @@ public class NpcAiController : MonoBehaviour
 
         //fight logic
 
+        //walk to and look to player
+        agent.SetDestination(transform.position);
+        transform.LookAt(player);
+
+
+        //
+        //attack delay
+        //attack
+        // if hit hp --;
+        //delay
+        //again
+        //
+
+
         //animation
         anim.Play("Attack00");
 
