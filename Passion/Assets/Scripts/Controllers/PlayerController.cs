@@ -96,6 +96,14 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Enemy")
+        {
+
+            Debug.Log("is atackable");
+        }
+    }
 
 
     //check if player controller hits items
