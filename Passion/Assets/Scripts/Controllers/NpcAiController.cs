@@ -6,9 +6,10 @@ using UnityEngine.AI;
 public class NpcAiController : MonoBehaviour
 {
 
-    //public values for my npc and animation 
+    //public values for my npc , animation and player direction
     public NavMeshAgent agent;
     public Animator anim;
+    public Transform player;
 
     //radius to walk in, and to set postion
     bool WalkPointPosition;
@@ -16,14 +17,20 @@ public class NpcAiController : MonoBehaviour
 
     //Layermask to declare where you can walk
     public Vector3 PointToWalk;
-    public LayerMask isGround;
+    public LayerMask isGround, isPlayer;
+
+    //declare range on enemy player has to be in, to set bool false or true
+    public float inAgressiveRange;
+    private bool playerInAgressiveRange;
 
     
+
 
     private void Awake()
     {
         
         agent = GetComponent<NavMeshAgent>();
+        player = GameObject.Find("Player").transform;
         anim = GetComponent<Animator>();
 
     }
@@ -31,7 +38,14 @@ public class NpcAiController : MonoBehaviour
 
     private void Update()
     {
-         Wandering();
+        //Look if the player is inside the aggresive range, if so set to true
+        playerInAgressiveRange = Physics.CheckSphere(transform.position, inAgressiveRange, isPlayer);
+
+
+        //
+        if (playerInAgressiveRange) { Agressive(); }
+        if (!playerInAgressiveRange) { Wandering(); }
+        
     }
 
     private void Wandering()
@@ -78,6 +92,11 @@ public class NpcAiController : MonoBehaviour
         }
           
     }
+    private void Agressive()
+    {
+        //if player is in agressive range walk towards player + walk animation
+        agent.SetDestination(player.position);
+        anim.Play("Walk00");
+    }
 
- 
 }
