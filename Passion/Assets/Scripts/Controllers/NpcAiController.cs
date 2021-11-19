@@ -23,7 +23,11 @@ public class NpcAiController : MonoBehaviour
     public float inAgressiveRange;
     private bool playerInAgressiveRange;
 
-    
+    //declare range on enemy player has to be in, to set bool false or true
+    public float inAttackRange;
+    private bool playerInFightRange;
+
+
 
 
     private void Awake()
@@ -38,14 +42,28 @@ public class NpcAiController : MonoBehaviour
 
     private void Update()
     {
-        //Look if the player is inside the aggresive range, if so set to true
+        //Look if the player is inside the aggresive range and attack, if so set to true
         playerInAgressiveRange = Physics.CheckSphere(transform.position, inAgressiveRange, isPlayer);
+        playerInFightRange = Physics.CheckSphere(transform.position, inAttackRange, isPlayer);
 
 
-        //
-        if (playerInAgressiveRange) { Agressive(); }
-        if (!playerInAgressiveRange) { Wandering(); }
-        
+        //check if the player is in sight
+        if (playerInAgressiveRange || playerInFightRange)
+        {
+            if (playerInAgressiveRange && !playerInFightRange) 
+            {
+                Agressive(); 
+            }
+            else if (playerInFightRange && playerInAgressiveRange)
+            {  
+                Fight();
+            }
+        }
+        else 
+        { 
+            Wandering(); 
+        }
+
     }
 
     private void Wandering()
@@ -98,5 +116,16 @@ public class NpcAiController : MonoBehaviour
         agent.SetDestination(player.position);
         anim.Play("Walk00");
     }
+
+    private void Fight() 
+    {
+
+        //fight logic
+
+        //animation
+        anim.Play("Attack00");
+
+    }
+    
 
 }

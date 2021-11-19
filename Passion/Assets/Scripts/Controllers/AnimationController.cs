@@ -78,9 +78,9 @@ public class AnimationController : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0))
         {
-            animState = EAnim.attacking;
+            anim.Play("AttackState");
         }
-          
+            
 
     }
 
