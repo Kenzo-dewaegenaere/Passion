@@ -7,8 +7,6 @@ public class HUD : MonoBehaviour
 {
 
     public Inventory Inventory;
-
-
     public GameObject InventoryUI;
 
     void Start()
@@ -27,6 +25,8 @@ public class HUD : MonoBehaviour
 
     void InventoryState()
     {
+
+        //toggle inventory on/off
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (inventoryToggle)

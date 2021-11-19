@@ -13,6 +13,7 @@ public class AnimationController : MonoBehaviour
         idle,
         moving,
         jumping,
+        attacking,
         died
     }
     private EAnim prevAnimState;
@@ -24,6 +25,7 @@ public class AnimationController : MonoBehaviour
 
         anim = GetComponent<Animator>();
         animState = EAnim.idle;
+
 
     }
 
@@ -74,6 +76,12 @@ public class AnimationController : MonoBehaviour
             animState = EAnim.died;
 
         }
+        if (Input.GetMouseButtonDown(0))
+        {
+            animState = EAnim.attacking;
+        }
+          
+
     }
 
     void DoAnimation()
@@ -94,6 +102,11 @@ public class AnimationController : MonoBehaviour
 
             case EAnim.died:
                 anim.Play("Dead00");
+                break;
+
+            case EAnim.attacking:
+                anim.Play("Attack00");
+                
                 break;
 
             default:
