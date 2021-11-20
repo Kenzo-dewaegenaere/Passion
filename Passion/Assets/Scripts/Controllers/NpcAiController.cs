@@ -35,6 +35,7 @@ public class NpcAiController : MonoBehaviour
     //health set to enemy
     [Header("Health")]
     public int currentEnemyHealth;
+    private bool dead = false;
 
 
     private void Awake()
@@ -60,7 +61,7 @@ public class NpcAiController : MonoBehaviour
 
 
         //check if the player is in sight
-        if (playerInAgressiveRange || playerInFightRange)
+        if ((playerInAgressiveRange || playerInFightRange) && !dead)
         {
             if (playerInAgressiveRange && !playerInFightRange) 
             {
@@ -74,6 +75,14 @@ public class NpcAiController : MonoBehaviour
         else 
         { 
             Wandering(); 
+        }
+
+        if (currentEnemyHealth <= 0)
+        {
+            dead = true;
+            Debug.Log("im dead");
+            anim.Play("Dead00");
+            Destroy(gameObject, 2);
         }
 
     }
