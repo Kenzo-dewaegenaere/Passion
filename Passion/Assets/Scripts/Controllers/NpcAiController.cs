@@ -11,6 +11,10 @@ public class NpcAiController : MonoBehaviour
     public Animator anim;
     public Transform player;
 
+    public GameObject playerHealth;
+    private PlayerController currentPlayerHealth;
+
+
     //radius to walk in, and to set postion
     bool WalkPointPosition;
     public float radius;
@@ -28,6 +32,9 @@ public class NpcAiController : MonoBehaviour
     private bool playerInFightRange;
 
 
+    //health set to enemy
+    [Header("Health")]
+    public int currentEnemyHealth;
 
 
     private void Awake()
@@ -37,6 +44,11 @@ public class NpcAiController : MonoBehaviour
         player = GameObject.Find("Player").transform;
         anim = GetComponent<Animator>();
 
+    }
+
+    void Start()
+    {
+        currentPlayerHealth = playerHealth.GetComponent<PlayerController>();
     }
 
 
@@ -120,6 +132,7 @@ public class NpcAiController : MonoBehaviour
     private void Fight() 
     {
 
+        int damage = 2;
         //fight logic
 
         //walk to and look to player
@@ -128,10 +141,12 @@ public class NpcAiController : MonoBehaviour
 
 
         //
+
+
+
         //attack delay
-        //attack
-        // if hit hp --;
-        //delay
+        currentPlayerHealth.currentPlayerHealth -= damage;
+         //delay
         //again
         //
 

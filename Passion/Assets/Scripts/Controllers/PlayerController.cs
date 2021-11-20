@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -27,6 +27,10 @@ public class PlayerController : MonoBehaviour
     public float gravity = -15f;
    
     public float velocityY;
+
+
+    [Header("Health")]
+    public int currentPlayerHealth;
 
   //private Vector3 velocity;
 
@@ -79,49 +83,7 @@ public class PlayerController : MonoBehaviour
            velocityY = 0;
         }
 
-        
-        //if (Input.GetButtonDown("Jump") && controller.isGrounded)
-        //// (-0.5) change this value according to your character y position + 1
-        //{
-        //    velocity.y = jumpHeight;
-           
-        //}
-        //else
-        //{
-        //    velocity.y += gravity * Time.deltaTime;
-        //}
-        //controller.Move(velocity * Time.deltaTime);
-
-
-
     }
-
-    bool triggerEntered = false;
-
-    IEnumerator OnTriggerEnter(Collider col)
-    {
-        if (col.gameObject.tag == "Enemy")
-        {
-            triggerEntered = true;
-
-            //Decrease while triggerEntered is true
-            while (triggerEntered)
-            {
-
-
-                Debug.Log("hit");
-
-                yield return new WaitForSeconds(1);
-              
-            }
-        }
-        else
-        {
-            triggerEntered = false;
-            Debug.Log("No hit");
-        }
-    }
-
 
     //check if player controller hits items
     private void OnControllerColliderHit(ControllerColliderHit hit)

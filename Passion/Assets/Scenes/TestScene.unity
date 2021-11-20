@@ -262,6 +262,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 74353040}
   isGrounded: 0
+--- !u!114 &74353043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74353038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 451f168964302f249a854fdd8a6d9529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inAttackRange: 1
+  isEnemy:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &88164672
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,7 +1221,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288271861}
-  m_LocalRotation: {x: 0.13505942, y: 8.719026e-16, z: -1.7869098e-17, w: 0.9908375}
+  m_LocalRotation: {x: 0.1350594, y: -0.00000001476463, z: 0.0000000020125421, w: 0.9908375}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1668,6 +1684,7 @@ MonoBehaviour:
   jumpHeight: 10
   gravity: -12
   velocityY: 0
+  currentPlayerHealth: 100
 --- !u!143 &584157896
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2475,6 +2492,7 @@ MonoBehaviour:
   agent: {fileID: 845268022}
   anim: {fileID: 845268020}
   player: {fileID: 584157894}
+  playerHealth: {fileID: 584157893}
   radius: 4
   PointToWalk: {x: 0, y: 0, z: 0}
   isGround:
@@ -4225,6 +4243,10 @@ PrefabInstance:
     - target: {fileID: 1849936960482616, guid: 46ed63af97cc2db47b121fc1b2cc6bf0, type: 3}
       propertyPath: m_Name
       value: SkeletonOutlaw_NoArmor - LOD0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849936960482616, guid: 46ed63af97cc2db47b121fc1b2cc6bf0, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1849936960482616, guid: 46ed63af97cc2db47b121fc1b2cc6bf0, type: 3}
       propertyPath: m_IsActive
