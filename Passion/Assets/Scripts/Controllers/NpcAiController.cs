@@ -45,6 +45,7 @@ public class NpcAiController : MonoBehaviour
         
 
         anim.Play("Idle01");
+        transform.LookAt(player);
 
     }
 
