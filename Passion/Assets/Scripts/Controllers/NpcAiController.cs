@@ -60,6 +60,14 @@ public class NpcAiController : MonoBehaviour
         playerInFightRange = Physics.CheckSphere(transform.position, inAttackRange, isPlayer);
 
 
+        if (currentEnemyHealth <= 0)
+        {
+            dead = true;
+            Debug.Log("im dead");
+            anim.Play("Dead00");
+            Destroy(gameObject, 2);
+        }
+
         //check if the player is in sight
         if ((playerInAgressiveRange || playerInFightRange) && !dead)
         {
