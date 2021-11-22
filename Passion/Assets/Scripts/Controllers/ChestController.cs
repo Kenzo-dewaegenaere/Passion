@@ -2,29 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChestInteraction : MonoBehaviour
+public class ChestController : MonoBehaviour
 {
-
+    // Start is called before the first frame update
     private GameObject triggeringChest;
-    private bool triggering;    
+    private bool triggering;
 
     public GameObject interactionText;
-
-    public GameObject inventoryUI;
-
+    public Animator anim;
 
 
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
     void Update()
     {
         if (triggering)
         {
-             interactionText.SetActive(true);
+            interactionText.SetActive(true);
 
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.Q))
             {
                 interactionText.SetActive(false);
                 Debug.Log("Open chest");
-                inventoryUI.SetActive(true);
+                anim.Play("Animated PBR Chest _Opening_UnCommon");
 
 
             }
@@ -33,13 +35,13 @@ public class ChestInteraction : MonoBehaviour
         else
         {
             interactionText.SetActive(false);
-            inventoryUI.SetActive(false);
+            
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "chest")
+        if (other.tag == "Player")
         {
             triggering = true;
             triggeringChest = other.gameObject;
@@ -49,14 +51,11 @@ public class ChestInteraction : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.tag == "chest")
+        if (other.tag == "Player")
         {
             triggering = false;
             triggeringChest = null;
             Debug.Log("out radius");
         }
     }
-
-
-
 }

@@ -42,8 +42,9 @@ public class NpcAiController : MonoBehaviour
     private void Update()
     {
         //Wandering();
+        
 
-        anim.Play("Idle");
+        anim.Play("Idle01");
 
     }
 
