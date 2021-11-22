@@ -21,7 +21,7 @@ public class NpcConversation : MonoBehaviour
                 npcText.SetActive(true);
             }
 
-            if (Input.GetKeyDown(KeyCode.Q))
+            if (!interacting && Input.GetKeyDown(KeyCode.Q))
             {
                 interacting = true;
                 npcText.SetActive(false);
@@ -29,7 +29,10 @@ public class NpcConversation : MonoBehaviour
 
             if (triggering && interacting)
             {
-                Debug.Log("talktalktalk");
+                
+                npcText.SetActive(false);
+                AudioManagerController.PlaySound();
+                interacting = false;
             }
 
         }
