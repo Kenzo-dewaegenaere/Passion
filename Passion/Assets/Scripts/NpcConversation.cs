@@ -7,6 +7,7 @@ public class NpcConversation : MonoBehaviour
 
     private GameObject triggeringNpc;
     private bool triggering;
+    private bool interacting;
 
     public GameObject npcText;
 
@@ -14,12 +15,23 @@ public class NpcConversation : MonoBehaviour
     {
         if (triggering)
         {
-            npcText.SetActive(true);
 
-            if (Input.GetKeyDown(KeyCode.E))
+            if (triggering && !interacting)
             {
-                Debug.Log("interacting");
+                npcText.SetActive(true);
             }
+
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                interacting = true;
+                npcText.SetActive(false);
+            }
+
+            if (triggering && interacting)
+            {
+                Debug.Log("talktalktalk");
+            }
+
         }
         else
         {
@@ -29,21 +41,22 @@ public class NpcConversation : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "NPC")
+        if(other.tag == "Player")
         {
             triggering = true;
             triggeringNpc = other.gameObject;
-            Debug.Log("in radius");
+            
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.tag == "NPC")
+        if (other.tag == "Player")
         {
             triggering = false;
-            triggeringNpc = null;
-            Debug.Log("out radius");
+            interacting = false;
+            triggeringNpc = null;   
+
         }
     }
 

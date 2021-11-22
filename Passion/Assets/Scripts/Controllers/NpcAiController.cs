@@ -11,9 +11,6 @@ public class NpcAiController : MonoBehaviour
     public Animator anim;
     public Transform player;
 
-    public GameObject playerHealth;
-    private PlayerController currentPlayerHealth;
-
 
     //radius to walk in, and to set postion
     bool WalkPointPosition;
@@ -27,71 +24,26 @@ public class NpcAiController : MonoBehaviour
     public float inAgressiveRange;
     private bool playerInAgressiveRange;
 
-    //declare range on enemy player has to be in, to set bool false or true
-    public float inAttackRange;
-    private bool playerInFightRange;
-
-
-    //health set to enemy
-    [Header("Health")]
-    public int currentEnemyHealth;
-    private bool dead = false;
-
 
     private void Awake()
     {
         
         agent = GetComponent<NavMeshAgent>();
-        player = GameObject.Find("Player").transform;
         anim = GetComponent<Animator>();
 
     }
 
     void Start()
     {
-        currentPlayerHealth = playerHealth.GetComponent<PlayerController>();
+       
     }
 
 
     private void Update()
     {
-        //Look if the player is inside the aggresive range and attack, if so set to true
-        playerInAgressiveRange = Physics.CheckSphere(transform.position, inAgressiveRange, isPlayer);
-        playerInFightRange = Physics.CheckSphere(transform.position, inAttackRange, isPlayer);
+        //Wandering();
 
-
-        if (currentEnemyHealth <= 0)
-        {
-            dead = true;
-            Debug.Log("im dead");
-            anim.Play("Dead00");
-            Destroy(gameObject, 2);
-        }
-
-        //check if the player is in sight
-        if ((playerInAgressiveRange || playerInFightRange) && !dead)
-        {
-            if (playerInAgressiveRange && !playerInFightRange) 
-            {
-                Agressive(); 
-            }
-            else if (playerInFightRange && playerInAgressiveRange)
-            {  
-                Fight();
-            }
-        }
-        else 
-        { 
-            Wandering(); 
-        }
-
-        if (currentEnemyHealth <= 0)
-        {
-            dead = true;
-            Debug.Log("im dead");
-            anim.Play("Dead00");
-            Destroy(gameObject, 2);
-        }
+        anim.Play("Idle");
 
     }
 
@@ -139,39 +91,8 @@ public class NpcAiController : MonoBehaviour
         }
           
     }
-    private void Agressive()
-    {
-        //if player is in agressive range walk towards player + walk animation
-        agent.SetDestination(player.position);
-        anim.Play("Walk00");
-    }
-
-    private void Fight() 
-    {
-
-        int damage = 2;
-        //fight logic
-
-        //walk to and look to player
-        agent.SetDestination(transform.position);
-        transform.LookAt(player);
-
-
-        //
 
 
 
-        //attack delay
-        currentPlayerHealth.currentPlayerHealth -= damage;
-         //delay
-        //again
-        //
-
-
-        //animation
-        anim.Play("Attack00");
-
-    }
-    
 
 }

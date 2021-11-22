@@ -32,11 +32,7 @@ public class PlayerCombatController : MonoBehaviour
     private void Update()
     {
 
-        int damage = 10;
-
         //if in fight range set to true
-
-
         playerInFightRange = Physics.CheckSphere(transform.position, inAttackRange, isEnemy);
 
 
@@ -48,9 +44,28 @@ public class PlayerCombatController : MonoBehaviour
             foreach (var hitCollider in hitColliders)
             {
 
-                enemyHp = hitCollider.gameObject.GetComponent<NpcAiController>().currentEnemyHealth;
-   
-                Debug.Log(enemyHp);
+
+                GameObject enemy = hitCollider.gameObject;
+                EnemyAiController enemyHealth = enemy.GetComponent<EnemyAiController>();
+                enemyHealth.DoDamage();
+
+
+
+                //float m_Thrust = 20f;
+                //Rigidbody m_Rigidbody;
+                //m_Rigidbody = enemy.GetComponent<Rigidbody>();
+
+                //m_Rigidbody.AddForce(transform.up * m_Thrust);
+                //if (Input.GetAxis("Jump") > 0)
+                //{ 
+                //    Debug.Log(m_Rigidbody);
+                    
+                //    var opposite = -m_Rigidbody.velocity;
+                //    m_Rigidbody.AddForce(opposite * Time.deltaTime);
+
+
+                //}
+
             }
         }
         else
