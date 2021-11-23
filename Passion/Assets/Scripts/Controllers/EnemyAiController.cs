@@ -92,7 +92,6 @@ public class EnemyAiController : MonoBehaviour
         if (currentEnemyHealth <= 0)
         {
             dead = true;
-            Debug.Log("im dead");
             anim.Play("Dead00");
             Destroy(gameObject, 2);
         }
@@ -149,7 +148,6 @@ public class EnemyAiController : MonoBehaviour
         agent.SetDestination(player.position);
         anim.Play("Walk00");
     }
-
     private void Fight() 
     {
 
@@ -167,17 +165,24 @@ public class EnemyAiController : MonoBehaviour
             anim.Play("Attack00");
             currentPlayerHealth.currentPlayerHealth -= damage;
             lastAttackedAt = Time.time;
-            Debug.Log("enemy is hit");
         }
        
     }
-
     public void DoDamage()
     {
        
         currentEnemyHealth --;
             
-        Debug.Log(currentEnemyHealth);
+
+
+    }
+
+    public void Kill()
+    {
+
+        dead = true;
+        anim.Play("Dead00");
+        Destroy(gameObject, 2);
 
     }
 

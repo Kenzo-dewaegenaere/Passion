@@ -10,10 +10,15 @@ public class AudioController : MonoBehaviour
 
     private Dictionary<string, Action> keywordActions = new Dictionary<string, Action>();
     private KeywordRecognizer keywordRecognizer;
+
+    private PlayerCombatController spells;
+    public GameObject spellcast;
     void Start()
     {
+
+        spells = spellcast.GetComponent<PlayerCombatController>();
         //Add keywords and set them to a function
-        keywordActions.Add("test", Test);
+        keywordActions.Add("Test", Test);
 
 
         //put all the keywords in an array for easy acces, this way we don't need switch cases etc. 
@@ -36,6 +41,7 @@ public class AudioController : MonoBehaviour
 
     private void Test()
     {
+        spells.TestSpell();
         Debug.Log("test has been said");
     }
 }

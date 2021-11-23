@@ -26,7 +26,6 @@ public class NpcAiController : MonoBehaviour
        
     }
 
-
     private void Update()
     {
         

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class PlayerCombatController : MonoBehaviour
@@ -24,7 +25,7 @@ public class PlayerCombatController : MonoBehaviour
 
     public float cooldown = 1f; //seconds
     private float lastAttackedAt = -9999f;
-
+    public float spellCooldown = 2f; 
     void Start()
     {
         //get the health
@@ -49,21 +50,44 @@ public class PlayerCombatController : MonoBehaviour
 
 
                 GameObject enemy = hitCollider.gameObject;
+               
                 EnemyAiController enemyHealth = enemy.GetComponent<EnemyAiController>();
+
 
 
                 if(Input.GetMouseButtonDown(0))
                 {
                    
-                    if (Time.time > lastAttackedAt + cooldown)
+                    if (Time.deltaTime > lastAttackedAt + cooldown)
                     {
                         enemyHealth.DoDamage();
                         lastAttackedAt = Time.time;
-                        Debug.Log("enemy is hit");
+                        
                     }
-                    Debug.Log("CD");
+                   
                 }
 
+                if (Input.GetKeyDown(KeyCode.X))
+                {
+
+              
+                        Rigidbody rb = enemy.GetComponent<Rigidbody>();
+                        if (Time.time > lastAttackedAt + spellCooldown)
+                        {
+                            rb.isKinematic = false;
+                            rb.AddForce(transform.forward * 10, ForceMode.Impulse);
+                            enemyHealth.Kill();
+                            lastAttackedAt = Time.time;
+
+                        }
+                    
+
+                   
+
+                }
+
+
+                
 
             }
         }
@@ -76,6 +100,39 @@ public class PlayerCombatController : MonoBehaviour
 
 
     }
+
+    public void TestSpell()
+    {
+
+        playerInFightRange = Physics.CheckSphere(transform.position, inAttackRange, isEnemy);
+
+        if (playerInFightRange)
+        {
+            Collider[] hitColliders = Physics.OverlapSphere(transform.position, inAttackRange, isEnemy);
+            foreach (var hitCollider in hitColliders)
+            {
+
+                GameObject enemy = hitCollider.gameObject;
+                EnemyAiController enemyHealth = enemy.GetComponent<EnemyAiController>();
+
+                    Rigidbody rb = enemy.GetComponent<Rigidbody>();
+                    if (Time.time > lastAttackedAt + spellCooldown)
+                    {
+                        rb.isKinematic = false;
+                        rb.AddForce(transform.forward * 10, ForceMode.Impulse);
+                        enemyHealth.Kill();
+                        lastAttackedAt = Time.time;
+
+                    }
+            }
+        }
+        else
+        {
+            //if in not fight range
+            //Debug.Log("not attackable");
+        }
+    }
+
 }
 
 
