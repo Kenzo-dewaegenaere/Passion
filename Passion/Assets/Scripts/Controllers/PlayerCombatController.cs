@@ -21,7 +21,10 @@ public class PlayerCombatController : MonoBehaviour
 
     private int enemyHp;
 
-   
+
+    public float cooldown = 1f; //seconds
+    private float lastAttackedAt = -9999f;
+
     void Start()
     {
         //get the health
@@ -47,24 +50,20 @@ public class PlayerCombatController : MonoBehaviour
 
                 GameObject enemy = hitCollider.gameObject;
                 EnemyAiController enemyHealth = enemy.GetComponent<EnemyAiController>();
-                enemyHealth.DoDamage();
 
 
+                if(Input.GetMouseButtonDown(0))
+                {
+                   
+                    if (Time.time > lastAttackedAt + cooldown)
+                    {
+                        enemyHealth.DoDamage();
+                        lastAttackedAt = Time.time;
+                        Debug.Log("enemy is hit");
+                    }
+                    Debug.Log("CD");
+                }
 
-                //float m_Thrust = 20f;
-                //Rigidbody m_Rigidbody;
-                //m_Rigidbody = enemy.GetComponent<Rigidbody>();
-
-                //m_Rigidbody.AddForce(transform.up * m_Thrust);
-                //if (Input.GetAxis("Jump") > 0)
-                //{ 
-                //    Debug.Log(m_Rigidbody);
-                    
-                //    var opposite = -m_Rigidbody.velocity;
-                //    m_Rigidbody.AddForce(opposite * Time.deltaTime);
-
-
-                //}
 
             }
         }

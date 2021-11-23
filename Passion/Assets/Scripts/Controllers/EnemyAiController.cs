@@ -37,6 +37,9 @@ public class EnemyAiController : MonoBehaviour
     public int currentEnemyHealth;
     private bool dead = false;
 
+    //delay
+    public float cooldown = 1.5f; //seconds
+    private float lastAttackedAt = -9999f;
 
     private void Awake()
     {
@@ -80,10 +83,11 @@ public class EnemyAiController : MonoBehaviour
                 Fight();
             }
         }
-        else 
-        { 
-            Wandering(); 
+        if (!playerInAgressiveRange && !playerInFightRange && !dead)
+        {
+            Wandering();
         }
+
 
         if (currentEnemyHealth <= 0)
         {
@@ -157,20 +161,15 @@ public class EnemyAiController : MonoBehaviour
         transform.LookAt(player);
 
 
-        //
-
-
-
         //attack delay
-        currentPlayerHealth.currentPlayerHealth -= damage;
-         //delay
-        //again
-        //
-
-
-        //animation
-        anim.Play("Attack00");
-
+        if (Time.time > lastAttackedAt + cooldown)
+        {
+            anim.Play("Attack00");
+            currentPlayerHealth.currentPlayerHealth -= damage;
+            lastAttackedAt = Time.time;
+            Debug.Log("enemy is hit");
+        }
+       
     }
 
     public void DoDamage()

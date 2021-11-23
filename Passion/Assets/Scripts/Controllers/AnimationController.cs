@@ -59,7 +59,7 @@ public class AnimationController : MonoBehaviour
             animState = EAnim.moving;
         }
 
-        if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0 && Input.GetAxis("Jump") == 0 && transform.position.y > -1)
+        if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0 && Input.GetAxis("Jump") == 0 && transform.position.y > -1 && !(Input.GetMouseButtonDown(0)))
         {
 
             animState = EAnim.idle;
