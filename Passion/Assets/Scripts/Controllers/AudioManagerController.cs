@@ -7,15 +7,16 @@ public class AudioManagerController : MonoBehaviour
 
     public static AudioClip test;
     static AudioSource audioSrc;
+
     // Start is called before the first frame update
     void Start()
     {
         test = Resources.Load<AudioClip>("test");
         audioSrc = GetComponent<AudioSource>();
-        
+
     }
 
-  public static void PlaySound(int whatSound)
+    public static void PlaySound(int whatSound)
     {
 
         switch (whatSound)
@@ -28,6 +29,6 @@ public class AudioManagerController : MonoBehaviour
                 break;
         }
 
-        
+
     }
 }

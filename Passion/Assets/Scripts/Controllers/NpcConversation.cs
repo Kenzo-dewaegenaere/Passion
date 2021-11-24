@@ -11,35 +11,35 @@ public class NpcConversation : MonoBehaviour
 
     public GameObject npcText;
 
-    public int sound;
+    public int whatSound;
 
-     void Update()
+    void Update()
     {
-            if (triggering)
+        if (triggering)
+        {
+
+
+
+            if (triggering && !interacting)
+            {
+                npcText.SetActive(true);
+            }
+
+            if (!interacting && Input.GetKeyDown(KeyCode.Q))
+            {
+                interacting = true;
+                npcText.SetActive(false);
+            }
+
+            if (triggering && interacting)
             {
 
-           
+                npcText.SetActive(false);
+                AudioManagerController.PlaySound(whatSound);
+                interacting = false;
+            }
 
-                if (triggering && !interacting)
-                {
-                npcText.SetActive(true);
-                }
-
-                if (!interacting && Input.GetKeyDown(KeyCode.Q))
-                {
-                    interacting = true;
-                    npcText.SetActive(false);
-                }
-
-                if (triggering && interacting)
-                {
-
-                    npcText.SetActive(false);
-                    AudioManagerController.PlaySound(sound);
-                    interacting = false;
-                }
-
-               }
+        }
         else
         {
             npcText.SetActive(false);
@@ -48,11 +48,11 @@ public class NpcConversation : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if (other.tag == "Player")
         {
             triggering = true;
             triggeringNpc = other.gameObject;
-            
+
         }
     }
 
@@ -62,7 +62,7 @@ public class NpcConversation : MonoBehaviour
         {
             triggering = false;
             interacting = false;
-            triggeringNpc = null;   
+            triggeringNpc = null;
 
         }
     }
