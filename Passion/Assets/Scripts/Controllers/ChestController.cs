@@ -25,7 +25,6 @@ public class ChestController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 interactionText.SetActive(false);
-                Debug.Log("Open chest");
                 anim.Play("Animated PBR Chest _Opening_UnCommon");
 
 
@@ -45,7 +44,6 @@ public class ChestController : MonoBehaviour
         {
             triggering = true;
             triggeringChest = other.gameObject;
-            Debug.Log("in radius");
         }
     }
 
@@ -55,7 +53,6 @@ public class ChestController : MonoBehaviour
         {
             triggering = false;
             triggeringChest = null;
-            Debug.Log("out radius");
         }
     }
 }
