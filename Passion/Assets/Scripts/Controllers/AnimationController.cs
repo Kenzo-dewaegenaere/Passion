@@ -89,15 +89,15 @@ public class AnimationController : MonoBehaviour
         switch (animState)
         {
             case EAnim.idle:
-                anim.Play("Idle");
+                anim.Play("Idle 0");
                 break;
 
             case EAnim.moving:
-                anim.Play("Walk00");
+                anim.Play("Walk 1");
                 break;
 
             case EAnim.jumping:
-                anim.Play("Jump00");
+                anim.Play("Jump 0");
                 break;
 
             case EAnim.died:
@@ -105,7 +105,7 @@ public class AnimationController : MonoBehaviour
                 break;
 
             case EAnim.attacking:
-                anim.Play("Attack00");
+                anim.Play("AttackState");
                 
                 break;
 

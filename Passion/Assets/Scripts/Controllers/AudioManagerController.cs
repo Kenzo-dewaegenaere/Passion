@@ -15,8 +15,19 @@ public class AudioManagerController : MonoBehaviour
         
     }
 
-  public static void PlaySound()
+  public static void PlaySound(int whatSound)
     {
-        audioSrc.PlayOneShot(test);
+
+        switch (whatSound)
+        {
+            case 1:
+                audioSrc.PlayOneShot(test);
+                break;
+
+            default:
+                break;
+        }
+
+        
     }
 }

@@ -58,9 +58,11 @@ public class PlayerCombatController : MonoBehaviour
                 if(Input.GetMouseButtonDown(0))
                 {
                    
-                    if (Time.deltaTime > lastAttackedAt + cooldown)
+                    if (Time.time > lastAttackedAt + cooldown)
                     {
+                        Debug.Log("att");
                         enemyHealth.DoDamage();
+                        Debug.Log(enemyHealth.currentEnemyHealth);
                         lastAttackedAt = Time.time;
                         
                     }

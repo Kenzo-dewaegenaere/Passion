@@ -11,31 +11,35 @@ public class NpcConversation : MonoBehaviour
 
     public GameObject npcText;
 
+    public int sound;
+
      void Update()
     {
-        if (triggering)
-        {
-
-            if (triggering && !interacting)
+            if (triggering)
             {
+
+           
+
+                if (triggering && !interacting)
+                {
                 npcText.SetActive(true);
-            }
+                }
 
-            if (!interacting && Input.GetKeyDown(KeyCode.Q))
-            {
-                interacting = true;
-                npcText.SetActive(false);
-            }
+                if (!interacting && Input.GetKeyDown(KeyCode.Q))
+                {
+                    interacting = true;
+                    npcText.SetActive(false);
+                }
 
-            if (triggering && interacting)
-            {
-                
-                npcText.SetActive(false);
-                AudioManagerController.PlaySound();
-                interacting = false;
-            }
+                if (triggering && interacting)
+                {
 
-        }
+                    npcText.SetActive(false);
+                    AudioManagerController.PlaySound(sound);
+                    interacting = false;
+                }
+
+               }
         else
         {
             npcText.SetActive(false);

@@ -18,7 +18,7 @@ public class AudioController : MonoBehaviour
 
         spells = spellcast.GetComponent<PlayerCombatController>();
         //Add keywords and set them to a function
-        keywordActions.Add("Test", Test);
+        keywordActions.Add("One", Test);
 
 
         //put all the keywords in an array for easy acces, this way we don't need switch cases etc. 
