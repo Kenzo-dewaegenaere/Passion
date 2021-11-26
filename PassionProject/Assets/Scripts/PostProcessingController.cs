@@ -31,26 +31,24 @@ public class PostProcessingController : MonoBehaviour
     void Update()
         {
 
-
+            //int to float
             healthToFloat = (float)currentPlayerHealth;
 
-            healthToFloat = (healthToFloat / 100f) *-1 +1;
+            //normalize
+            healthToFloat = (healthToFloat / 100f) * -1 + 1;
 
             //get the ColorAdjustment probably a good idea to check if it is null, I was lazy.
 
             vol.profile.TryGet(out vg);
 
-             //access the current values
+            //access the current values
 
-             curentVg = vg.intensity.value;
+            curentVg = vg.intensity.value;
 
-             //set the new values
+            //set the new values
 
-             vg.intensity.value = healthToFloat;
+            vg.intensity.value = healthToFloat +.3f;
 
-           
-
-            
 
         }
 
