@@ -23,6 +23,8 @@ public class MaterialStateController : MonoBehaviour
     void Update()
     {
         rend.sharedMaterial = material[x];
+
+        NextColor();
     }
 
 
@@ -31,7 +33,8 @@ public class MaterialStateController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            x++;
+            x = 2;
+
         }
         else if(Input.GetMouseButtonDown(1))
         {
