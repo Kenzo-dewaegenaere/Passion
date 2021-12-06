@@ -10,25 +10,18 @@ public class PostProcessingController : MonoBehaviour
 {
 
 
-    private bool triggering;
+    private bool triggeringReset;
+    private bool triggeringTrip;
 
     public GameObject State;
-
     public GameObject interactionText;
 
-    //[Header("Health")]
-    //public int currentPlayerHealth;
+    public Volume vol;
+    private Vignette vg;
+    public float targetVg = 1f;
 
 
-    //public Volume vol;
-
-    //private Vignette vg;
-
-    //private float curentVg = 0;
-
-    //public float targetVg = 1f;
-
-    //public float healthToFloat;
+    public float AmountEated;
 
     void Awake()
     {
@@ -37,83 +30,85 @@ public class PostProcessingController : MonoBehaviour
     void Update()
     {
 
-        ////int to float
-        //healthToFloat = (float)currentPlayerHealth;
 
-        ////normalize
-        //healthToFloat = (healthToFloat / 100f) * -1 + 1;
+        //get the ColorAdjustment probably a good idea to check if it is null, I was lazy.
 
-        ////get the ColorAdjustment probably a good idea to check if it is null, I was lazy.
+        vol.profile.TryGet(out vg);
 
-        //vol.profile.TryGet(out vg);
+        //set the new values
 
-        ////access the current values
+        vg.intensity.value = AmountEated + .5f;
 
-        //curentVg = vg.intensity.value;
 
-        ////set the new values
-
-        //vg.intensity.value = healthToFloat +.3f;
-
-        if (triggering)
+        if (triggeringTrip)
         {
-            interactionText.SetActive(true);
 
-            Debug.Log(gameObject.tag);
-            
-          
+            interactionText.transform.GetChild(0).gameObject.SetActive(true);
+
             if (Input.GetKeyDown(KeyCode.E))
             {
 
-                if (gameObject.CompareTag("IsReset"))
-                {
-
-                    State.transform.GetChild(0).gameObject.SetActive(false);
-                    State.transform.GetChild(1).gameObject.SetActive(false);
-
-                }
-
-                if (gameObject.CompareTag("IsTrip"))
-                {
-
-                    State.transform.GetChild(0).gameObject.SetActive(true);
-                    State.transform.GetChild(1).gameObject.SetActive(true);
-
-                }
-
-
+                State.transform.GetChild(0).gameObject.SetActive(true);
+                State.transform.GetChild(1).gameObject.SetActive(true);
+                AmountEated = AmountEated + .1f;
 
             }
 
         }
         else
         {
-            interactionText.SetActive(false);
+            interactionText.transform.GetChild(0).gameObject.SetActive(false);
+        }
+
+
+        if (triggeringReset)
+        {
+
+            interactionText.transform.GetChild(1).gameObject.SetActive(true);
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+
+                State.transform.GetChild(0).gameObject.SetActive(false);
+                State.transform.GetChild(1).gameObject.SetActive(false);
+                AmountEated = 0f;
+
+            }
 
         }
+        else
+        {
+            interactionText.transform.GetChild(1).gameObject.SetActive(false);
+        }
+
+
+    }
+
     
-
-
-}
-
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "IsPlayer")
+        if (other.tag == "IsTrip")
         {
+            triggeringTrip = true;
+        }
 
-            triggering = true;
-
-
+        if (other.tag == "IsReset")
+        {
+            triggeringReset = true;
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.tag == "IsPlayer")
+        if (other.tag == "IsTrip")
         {
-            triggering = false;
+            triggeringTrip = false;
+        }
 
+        if (other.tag == "IsReset")
+        {
+            triggeringReset = false;
         }
     }
 

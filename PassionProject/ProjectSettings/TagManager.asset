@@ -9,6 +9,8 @@ TagManager:
   - IsPlayer
   - PostProcessing
   - IsEnemy
+  - IsReset
+  - IsTrip
   layers:
   - Default
   - TransparentFX
