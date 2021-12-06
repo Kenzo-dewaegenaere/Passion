@@ -59,13 +59,18 @@ public class PostProcessingController : MonoBehaviour
         {
             interactionText.SetActive(true);
 
-
+            Debug.Log(gameObject.tag);
+            
+          
             if (Input.GetKeyDown(KeyCode.E))
             {
 
                 if (gameObject.CompareTag("IsReset"))
                 {
-                    Debug.Log("The tag for this GameObject is" + gameObject.tag);
+
+                    State.transform.GetChild(0).gameObject.SetActive(false);
+                    State.transform.GetChild(1).gameObject.SetActive(false);
+
                 }
 
                 if (gameObject.CompareTag("IsTrip"))
