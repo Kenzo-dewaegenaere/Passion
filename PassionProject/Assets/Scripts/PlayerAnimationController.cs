@@ -53,16 +53,16 @@ public class PlayerAnimationController : MonoBehaviour
 
     void UpdateAnimState()
     {
-        //if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0 && Input.GetAxis("Jump") == 0)
-        //{
+        if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0 && Input.GetAxis("Jump") == 0)
+        {
 
-        //    anim.Play("PlayerWalk");
-        //}
+            anim.Play("Walk 1");
+        }
 
-        //if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0 && Input.GetAxis("Jump") == 0 && transform.position.y > -1 && !(Input.GetMouseButtonDown(0)))
-        //{
-        //    animState = EAnim.idle;
-        //}
+        if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0 && Input.GetAxis("Jump") == 0 && transform.position.y > -1 && !(Input.GetMouseButtonDown(0)))
+        {
+            animState = EAnim.PlayerIdle;
+        }
         if (Input.GetAxis("Jump") > 0)
         {
 

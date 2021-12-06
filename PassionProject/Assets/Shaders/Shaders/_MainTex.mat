@@ -9,8 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: _MainTex
   m_Shader: {fileID: 4800000, guid: 8d2bb70cbf9db8d4da26e15b26e74248, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
+  m_ShaderKeywords: _EMISSION
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2000
@@ -119,9 +119,9 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_2fc3a2e93fad40f0b2227484046a65e4: {r: 1, g: 1, b: 1, a: 0}
-    - _BaseColor: {r: 0.63529414, g: 0.6862745, b: 0.25882354, a: 1}
+    - _BaseColor: {r: 0.17804527, g: 0.49056602, b: 0.10412959, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0.026241222, g: 0.20507877, b: 0.010960094, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &2307869192843613129

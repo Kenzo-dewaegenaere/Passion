@@ -84,7 +84,7 @@ public class PlayerMovementController : MonoBehaviour
             controller.Move(moveDirection.normalized * speed * Time.deltaTime);
 
             //animation
-            animator.Play("PlayerWalk");
+            animator.Play("Walk 1");
         }else if (direction.magnitude >= .1f && Input.GetAxis("Jump") > 0)
         {
             animator.Play("PlayerJump");
