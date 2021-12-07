@@ -111,18 +111,23 @@ public class PlayerMovementController : MonoBehaviour
     }
 
     //check if player controller hits items
-    private void OnControllerColliderHit(ControllerColliderHit hit)
+
+    void OnTriggerEnter(Collider other)
     {
-
-        //Debug.Log("hit");
-        //get the item component
-        InventoryItems item = hit.collider.GetComponent<InventoryItems>();
-
-        //if the item excists
-        if (item != null)
+        if (other.tag == "IsItem")
         {
-            //add item to the list
-            inventory.AddItem(item);
+            Debug.Log("itemhit");
+
+            //get the item component
+            InventoryItems item = other.GetComponent<InventoryItems>();
+
+            //if the item excists
+            if (item != null)
+            {
+                //add item to the list
+                inventory.AddItem(item);
+            }
+
         }
 
     }
