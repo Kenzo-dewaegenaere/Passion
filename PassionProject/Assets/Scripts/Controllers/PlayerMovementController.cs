@@ -32,6 +32,12 @@ public class PlayerMovementController : MonoBehaviour
     [Header("Animation")]
     public Animator animator;
 
+
+    [Header("Chest interaction")]
+    public GameObject ChestInteractionUI;
+    private bool triggering;
+    private bool IsPressed;
+
     //[Header("Health")]
     //public int currentPlayerHealth;
 
@@ -47,7 +53,7 @@ public class PlayerMovementController : MonoBehaviour
 
     void start()
     {
-        
+
     }
 
 
@@ -70,7 +76,7 @@ public class PlayerMovementController : MonoBehaviour
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
 
-        if (direction.magnitude >= .1f && Input.GetAxis("Jump") == 0)
+        if (direction.magnitude >= .1f)
         {
             //get the angle player is looking at
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
@@ -86,18 +92,10 @@ public class PlayerMovementController : MonoBehaviour
             //animation
             animator.Play("Walk 1");
         }
-        //else if (direction.magnitude >= .1f && Input.GetAxis("Jump") > 0)
-        //{
-        //    animator.Play("PlayerJump");
-        //}
         else if ((direction.magnitude == 0f) && Input.GetAxis("Jump") == 0 && !(Input.GetMouseButtonDown(0)))
         {
             animator.Play("PlayerIdle");
         }
-        //else if ((Input.GetMouseButtonDown(0)) && (Input.GetAxis("Jump") == 0 || (direction.magnitude == 0f) || (direction.magnitude >= .1f)))
-        //{
-        //    animator.Play("PlayerAttack");
-        //}
 
 
         //gravity
@@ -116,20 +114,35 @@ public class PlayerMovementController : MonoBehaviour
     {
         if (other.tag == "IsItem")
         {
-            Debug.Log("itemhit");
 
+            //ChestInteractionUI.SetActive(true);
+
+            triggering = true;
             //get the item component
             InventoryItems item = other.GetComponent<InventoryItems>();
 
-            //if the item excists
-            if (item != null)
-            {
-                //add item to the list
-                inventory.AddItem(item);
-            }
+                //Debug.Log("eed");
+                //if the item excists
+
+                if (item != null)
+                {
+
+                    //add item to the list
+                    inventory.AddItem(item);
+                }
+       
+
+
+
 
         }
 
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        ChestInteractionUI.SetActive(false);
+        triggering = false;
     }
 
 }
