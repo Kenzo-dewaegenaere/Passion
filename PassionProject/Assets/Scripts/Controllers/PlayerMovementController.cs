@@ -36,7 +36,7 @@ public class PlayerMovementController : MonoBehaviour
     [Header("Chest interaction")]
     public GameObject ChestInteractionUI;
     private bool triggering;
-    private bool IsPressed;
+    public bool IsPickedUp;
     private InventoryItems item;
 
     //[Header("Health")]
@@ -62,23 +62,9 @@ public class PlayerMovementController : MonoBehaviour
     void Update()
     {
         calculateMovement();
+        OpenChest();
 
-        if (triggering)
-        {
-            if (Input.GetKeyDown(KeyCode.E)) {
-
-                if (item != null)
-                {
-
-                    ChestInteractionUI.SetActive(false);
-                    //add item to the list
-                    inventory.AddItem(item);
-                    triggering = false;
-                }
-
-            }
-
-        }
+        //Debug.Log(IsPickedUp);
     }
 
     void calculateMovement()
@@ -129,7 +115,7 @@ public class PlayerMovementController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "IsItem")
+        if (other.tag == "IsItem" || other.tag == "IsRightItem")
         {
 
             ChestInteractionUI.SetActive(true);
@@ -137,8 +123,7 @@ public class PlayerMovementController : MonoBehaviour
                 triggering = true;
                 //get the item component
                 item = other.GetComponent<InventoryItems>();
-                //if the item excists
-
+            //if the item excists
 
 
           
@@ -146,6 +131,33 @@ public class PlayerMovementController : MonoBehaviour
 
     }
 
+    void OpenChest()
+    {
+
+        if (triggering)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+
+                if (item != null)
+                {
+
+                    ChestInteractionUI.SetActive(false);
+                    //add item to the list
+                    inventory.AddItem(item);
+                    triggering = false;
+                    if (item.Image.name == "icon_itemicon_crown")
+                    {
+                        IsPickedUp = true;
+                        
+                    }
+                }
+
+            }
+
+        }
+
+    }
  
 
     void OnTriggerExit(Collider other)

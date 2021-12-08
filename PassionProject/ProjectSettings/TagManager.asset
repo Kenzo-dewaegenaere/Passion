@@ -12,6 +12,7 @@ TagManager:
   - IsReset
   - IsTrip
   - IsItem
+  - IsRightItem
   layers:
   - Default
   - TransparentFX
