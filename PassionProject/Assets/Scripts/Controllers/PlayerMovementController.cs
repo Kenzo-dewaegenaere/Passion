@@ -73,6 +73,7 @@ public class PlayerMovementController : MonoBehaviour
                     ChestInteractionUI.SetActive(false);
                     //add item to the list
                     inventory.AddItem(item);
+                    triggering = false;
                 }
 
             }

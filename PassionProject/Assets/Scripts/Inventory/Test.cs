@@ -5,13 +5,6 @@ using UnityEngine;
 public class Test : MonoBehaviour, InventoryItems
 {
 
-    [Header("Animation")]
-    public Animator animator;
-
-    void Start()
-    {
-        animator = GetComponentInChildren<Animator>();
-    }
     //declare the name
     public string Name
     {
