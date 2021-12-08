@@ -37,6 +37,7 @@ public class PlayerMovementController : MonoBehaviour
     public GameObject ChestInteractionUI;
     private bool triggering;
     private bool IsPressed;
+    private InventoryItems item;
 
     //[Header("Health")]
     //public int currentPlayerHealth;
@@ -62,6 +63,21 @@ public class PlayerMovementController : MonoBehaviour
     {
         calculateMovement();
 
+        if (triggering)
+        {
+            if (Input.GetKeyDown(KeyCode.E)) {
+
+                if (item != null)
+                {
+
+                    ChestInteractionUI.SetActive(false);
+                    //add item to the list
+                    inventory.AddItem(item);
+                }
+
+            }
+
+        }
     }
 
     void calculateMovement()
@@ -115,29 +131,21 @@ public class PlayerMovementController : MonoBehaviour
         if (other.tag == "IsItem")
         {
 
-            //ChestInteractionUI.SetActive(true);
+            ChestInteractionUI.SetActive(true);
 
-            triggering = true;
-            //get the item component
-            InventoryItems item = other.GetComponent<InventoryItems>();
-
-                //Debug.Log("eed");
+                triggering = true;
+                //get the item component
+                item = other.GetComponent<InventoryItems>();
                 //if the item excists
 
-                if (item != null)
-                {
-
-                    //add item to the list
-                    inventory.AddItem(item);
-                }
-       
 
 
-
-
+          
         }
 
     }
+
+ 
 
     void OnTriggerExit(Collider other)
     {

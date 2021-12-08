@@ -29,13 +29,15 @@ public class Inventory : MonoBehaviour
             if (collider.enabled)
             {
 
-                listItems.Add(item);
-                item.OnPickup();
+                    listItems.Add(item);
+                    item.OnPickup();
 
-                if(ItemAdded != null)
-                {
-                    ItemAdded(this, new InventoryEventArgs(item));
-                }
+                    if (ItemAdded != null)
+                    {
+                        ItemAdded(this, new InventoryEventArgs(item));
+                    }
+                
+                
             }
         }
     }

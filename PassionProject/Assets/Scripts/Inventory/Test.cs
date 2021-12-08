@@ -5,6 +5,13 @@ using UnityEngine;
 public class Test : MonoBehaviour, InventoryItems
 {
 
+    [Header("Animation")]
+    public Animator animator;
+
+    void Start()
+    {
+        animator = GetComponentInChildren<Animator>();
+    }
     //declare the name
     public string Name
     {
@@ -28,7 +35,6 @@ public class Test : MonoBehaviour, InventoryItems
 
     public void OnPickup()
     {
-
         //disable the object so it doesn't appear
         gameObject.SetActive(false);
     }
