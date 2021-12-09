@@ -14,6 +14,7 @@ public class PostProcessingController : MonoBehaviour
     private bool triggeringTrip;
 
     public GameObject State;
+    public GameObject HelpState;
     public GameObject interactionText;
 
     public Volume vol;
@@ -52,6 +53,10 @@ public class PostProcessingController : MonoBehaviour
                 State.transform.GetChild(1).gameObject.SetActive(true);
                 AmountEated = AmountEated + .1f;
 
+            }
+            if(AmountEated > .2f)
+            {
+                HelpState.gameObject.SetActive(true);
             }
 
         }

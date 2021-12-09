@@ -17,7 +17,7 @@ public class NpcFlofloSounds : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(lastTalkedAt + cooldown);
+        //Debug.Log(lastTalkedAt + cooldown);
     }
     void OnTriggerEnter(Collider other)
     {

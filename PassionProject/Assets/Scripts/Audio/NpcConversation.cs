@@ -16,12 +16,27 @@ public class NpcConversation : MonoBehaviour
 
     public Transform player;
 
-
+    [Header("Audio files")]
     public AudioClip Intro;
     public AudioClip Tips;
     public AudioClip Final;
 
+    [Header("Dialogue files")]
+    public GameObject Dialogue;
+    public GameObject First;
+    public GameObject Second;
+    public GameObject Last;
+
+
+
+    [Header("Barrier")]
+    public GameObject Barrier;
+
     private bool intro = false;
+
+    private bool IsPlayed = false;
+    private bool IntroPlayed = false;
+    private bool IsDone = false;
 
 
     private void Awake()
@@ -38,7 +53,7 @@ public class NpcConversation : MonoBehaviour
         if (triggering)
         {
 
-            if (triggering && !interacting)
+            if (!interacting)
             {
                 npcText.SetActive(true);
             }
@@ -47,6 +62,13 @@ public class NpcConversation : MonoBehaviour
             {
                 interacting = true;
                 npcText.SetActive(false);
+                Dialogue.SetActive(true);
+                Barrier.GetComponent<Collider>().isTrigger = true;
+
+                if (intro)
+                {
+                    IntroPlayed = true;
+                }
             }
 
             if (triggering && interacting)
@@ -56,13 +78,20 @@ public class NpcConversation : MonoBehaviour
                 if (!intro)
                 {
 
+                    interacting = false;
                     audio.PlayOneShot(Intro);
 
                     npcText.SetActive(false);
 
-                    interacting = false;
+                    
                     intro = true;
-                }else if (intro && !IsFound.GetComponent<PlayerMovementController>().getBool())
+
+                    //dialogue handling
+                    First.SetActive(true);
+                    Second.SetActive(false);
+                    Last.SetActive(false);
+                }
+                else if (intro && !IsPlayed && !IsFound.GetComponent<PlayerMovementController>().getBool())
                 {
 
                     audio.PlayOneShot(Tips);
@@ -71,14 +100,27 @@ public class NpcConversation : MonoBehaviour
 
                     interacting = false;
 
+
+                    //dialogue handling
+                    First.SetActive(false);
+                    Second.SetActive(true);
+                    Last.SetActive(false);
+                    IsPlayed = true;
+
                 }
-                else
+                else if(IntroPlayed && !IsDone && IsFound.GetComponent<PlayerMovementController>().getBool())
                 {
                     audio.PlayOneShot(Final);
 
                     npcText.SetActive(false);
 
                     interacting = false;
+                    IsDone = true;
+
+                    //dialogue handling
+                    First.SetActive(false);
+                    Second.SetActive(false);
+                    Last.SetActive(true);
                 }
 
             }
@@ -87,6 +129,9 @@ public class NpcConversation : MonoBehaviour
         else
         {
             npcText.SetActive(false);
+            Dialogue.SetActive(false);
+            IsPlayed = false;
+            
         }
     }
 
@@ -111,6 +156,9 @@ public class NpcConversation : MonoBehaviour
         }
     }
 
+
+    public bool getFirst() { return intro; }
+    public bool getLast() { return IsFound.GetComponent<PlayerMovementController>().getBool(); }
 
 
 }
