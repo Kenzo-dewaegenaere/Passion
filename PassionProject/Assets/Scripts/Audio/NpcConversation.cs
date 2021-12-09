@@ -9,7 +9,8 @@ public class NpcConversation : MonoBehaviour
     private bool triggering;
     private bool interacting;
 
-    public AudioManagerControllerNpcOne Sound; 
+
+    public GameObject IsFound;
 
     public GameObject npcText;
 
@@ -20,6 +21,9 @@ public class NpcConversation : MonoBehaviour
     public AudioClip Tips;
     public AudioClip Final;
 
+    private bool intro = false;
+
+
     private void Awake()
     {
 
@@ -28,6 +32,7 @@ public class NpcConversation : MonoBehaviour
     }
     void Update()
     {
+
         transform.LookAt(player);
 
         if (triggering)
@@ -46,13 +51,36 @@ public class NpcConversation : MonoBehaviour
 
             if (triggering && interacting)
             {
-
                 AudioSource audio = GetComponent<AudioSource>();
-                audio.PlayOneShot(Tips);
 
-                npcText.SetActive(false);
-                
-                interacting = false;
+                if (!intro)
+                {
+
+                    audio.PlayOneShot(Intro);
+
+                    npcText.SetActive(false);
+
+                    interacting = false;
+                    intro = true;
+                }else if (intro && !IsFound.GetComponent<PlayerMovementController>().getBool())
+                {
+
+                    audio.PlayOneShot(Tips);
+
+                    npcText.SetActive(false);
+
+                    interacting = false;
+
+                }
+                else
+                {
+                    audio.PlayOneShot(Final);
+
+                    npcText.SetActive(false);
+
+                    interacting = false;
+                }
+
             }
 
         }

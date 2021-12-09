@@ -50,21 +50,12 @@ public class PlayerMovementController : MonoBehaviour
         animator = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
     }
-
-
-    void start()
-    {
-
-    }
-
-
-
     void Update()
     {
         calculateMovement();
         OpenChest();
 
-        //Debug.Log(IsPickedUp);
+
     }
 
     void calculateMovement()
@@ -158,7 +149,10 @@ public class PlayerMovementController : MonoBehaviour
         }
 
     }
- 
+
+    public bool getBool() { return IsPickedUp; }
+
+
 
     void OnTriggerExit(Collider other)
     {
