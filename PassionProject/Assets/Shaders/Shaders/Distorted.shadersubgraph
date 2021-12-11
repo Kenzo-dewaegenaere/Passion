@@ -499,10 +499,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 526.0,
-            "y": -245.25,
-            "width": 0.0,
-            "height": 0.0
+            "x": 488.9999694824219,
+            "y": -380.99993896484377,
+            "width": 141.0,
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -695,10 +695,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -838.0,
-            "y": 246.75006103515626,
-            "width": 0.0,
-            "height": 0.0
+            "x": -872.0,
+            "y": 135.99996948242188,
+            "width": 155.0,
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -826,7 +826,7 @@
         "m_GuidSerialized": "ff499a1a-4522-49c0-b60a-2395f62ac16d"
     },
     "m_Name": "Distord_Speed",
-    "m_DefaultReferenceName": "",
+    "m_DefaultReferenceName": "Vector2_4f53c0fdf5f542748d78d23916b1794d",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
@@ -1120,7 +1120,7 @@
         "m_GuidSerialized": "9cdf4aad-36d4-45a4-8fdc-354e1255de39"
     },
     "m_Name": "Mask",
-    "m_DefaultReferenceName": "",
+    "m_DefaultReferenceName": "Texture2D_93ecba5b82f14d4d94daee4f9204823c",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
@@ -1503,7 +1503,7 @@
         "m_GuidSerialized": "5a801530-242a-463a-916e-80dba1fcfa1f"
     },
     "m_Name": "Heat_Distort",
-    "m_DefaultReferenceName": "",
+    "m_DefaultReferenceName": "Vector1_d42dd46d066b442a8a3b39fea9da69e1",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
