@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTexture:
-        m_Texture: {fileID: 2800000, guid: 27ceb3322efe0494583b27312badd673, type: 3}
+        m_Texture: {fileID: 2800000, guid: 93345368840b16f409c94b334889d9a0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxOcclusionMapping_921d396488fb463991b2e3482b27834c_Heightmap_2:
