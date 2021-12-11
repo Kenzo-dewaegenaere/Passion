@@ -11,6 +11,7 @@ public class NpcConversation : MonoBehaviour
 
 
     public GameObject IsFound;
+    public GameObject GoNext;
 
     public GameObject npcText;
 
@@ -90,6 +91,7 @@ public class NpcConversation : MonoBehaviour
                     First.SetActive(true);
                     Second.SetActive(false);
                     Last.SetActive(false);
+                  
                 }
                 else if (intro && !IsPlayed && !IsFound.GetComponent<PlayerMovementController>().getBool())
                 {
@@ -121,6 +123,9 @@ public class NpcConversation : MonoBehaviour
                     First.SetActive(false);
                     Second.SetActive(false);
                     Last.SetActive(true);
+
+                    GoNext.GetComponent<GoNextScene>().NextScene();
+
                 }
 
             }
