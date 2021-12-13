@@ -1,5 +1,5 @@
 ﻿
-    Shader "ShaderMan/test1"
+    Shader "test1"
 	{
 	Properties{
 	

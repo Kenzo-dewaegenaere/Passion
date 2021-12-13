@@ -11,7 +11,7 @@ public class EnemyAiController : MonoBehaviour
     public Animator anim;
     public Transform player;
 
-    public GameObject playerHealth;
+    //public GameObject playerHealth;
     //private PlayerController currentPlayerHealth;
 
 
@@ -67,7 +67,7 @@ public class EnemyAiController : MonoBehaviour
         {
             dead = true;
             Debug.Log("im dead");
-            anim.Play("Dead00");
+            anim.Play("CharacterArmature|Death");
             Destroy(gameObject, 2);
         }
 
@@ -92,7 +92,7 @@ public class EnemyAiController : MonoBehaviour
         if (currentEnemyHealth <= 0)
         {
             dead = true;
-            anim.Play("Dead00");
+            anim.Play("CharacterArmature|Death");
             Destroy(gameObject, 2);
         }
 
@@ -100,7 +100,7 @@ public class EnemyAiController : MonoBehaviour
 
     private void Wandering()
     {
-
+        
         //if there is no point to walk to, set a walk point
         if (!WalkPointPosition)
         {
@@ -118,7 +118,7 @@ public class EnemyAiController : MonoBehaviour
         Vector3 distanceToWalkPoint = transform.position - PointToWalk;
 
         //play walk animation
-        anim.Play("Walk00");
+        anim.Play("Walk 1");
 
 
         //if destination is reached set walk point to false and calculate new one
@@ -135,6 +135,7 @@ public class EnemyAiController : MonoBehaviour
         PointToWalk = new Vector3(transform.position.x + posX, transform.position.y, transform.position.z + posZ);
 
 
+        Debug.Log(PointToWalk);
         //if the given walk point is on the walkable ground, set it to true
         if (Physics.Raycast(PointToWalk, -transform.up, 2f, isBaked))
         {
@@ -146,7 +147,7 @@ public class EnemyAiController : MonoBehaviour
     {
         //if player is in agressive range walk towards player + walk animation
         agent.SetDestination(player.position);
-        anim.Play("Walk00");
+        anim.Play("Walk 1");
     }
     private void Fight()
     {
@@ -162,7 +163,7 @@ public class EnemyAiController : MonoBehaviour
         //attack delay
         if (Time.time > lastAttackedAt + cooldown)
         {
-            anim.Play("Attack00");
+            anim.Play("CharacterArmature|Punch");
             //currentPlayerHealth.currentPlayerHealth -= damage;
             lastAttackedAt = Time.time;
         }
