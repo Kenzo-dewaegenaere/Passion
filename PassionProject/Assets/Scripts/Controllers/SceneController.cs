@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Rendering;
 
+
 public class SceneController : MonoBehaviour
 {
 
@@ -16,6 +17,7 @@ public class SceneController : MonoBehaviour
 
     public void NextScene()
     {
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

@@ -50,10 +50,15 @@ public class PlayerMovementController : MonoBehaviour
         animator = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
     }
+
     void Update()
     {
-        calculateMovement();
         OpenChest();
+    }
+    void LateUpdate()
+    {
+        calculateMovement();
+       
 
 
     }
