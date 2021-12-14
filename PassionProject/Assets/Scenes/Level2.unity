@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 84a6cda4fcc9939439ba0ac650a16281, type: 2}
 --- !u!1001 &3871227
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -133,6 +133,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -235,6 +239,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -475,6 +483,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1303920306}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6
@@ -573,6 +585,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1303920306}
     m_Modifications:
+    - target: {fileID: 1807867790344762, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1863549030409334, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
       propertyPath: m_Name
       value: House_2
@@ -690,6 +706,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -832,6 +852,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 236765009}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (4)
@@ -957,6 +981,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -1119,6 +1147,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -1220,6 +1252,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -1342,6 +1378,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -1586,6 +1626,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1740,6 +1784,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1858,6 +1906,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1669184608}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6
@@ -1956,6 +2008,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1102130995}
     m_Modifications:
+    - target: {fileID: 1807867790344762, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1863549030409334, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
       propertyPath: m_Name
       value: House_2
@@ -2065,6 +2121,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1311853047}
     m_Modifications:
+    - target: {fileID: 1807867790344762, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1863549030409334, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
       propertyPath: m_Name
       value: House_2
@@ -2172,6 +2232,163 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4828273245496568, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
   m_PrefabInstance: {fileID: 90659475}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &91181689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 91181690}
+  - component: {fileID: 91181693}
+  - component: {fileID: 91181692}
+  - component: {fileID: 91181691}
+  m_Layer: 0
+  m_Name: NPC-floflo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &91181690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91181689}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -186.842, y: -145.46, z: 31.46}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 277426670}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &91181691
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91181689}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 3, z: 5}
+  m_Center: {x: 93.4, y: 73.8, z: -15.7}
+--- !u!82 &91181692
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91181689}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &91181693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91181689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44aa50107c8a2cf48ae38f0735547f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcText: {fileID: 0}
+  FloFlo: {fileID: 8300000, guid: de2027c84cd35ca40a502375d3a6c51f, type: 3}
+  cooldown: 1.5
 --- !u!1001 &94470865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2179,6 +2396,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 534941477}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (3)
@@ -2277,6 +2498,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1211376898}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (3)
@@ -2496,6 +2721,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1764539843}
     m_Modifications:
+    - target: {fileID: 1519025595224228, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_Name
       value: House_5
@@ -2602,6 +2831,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 779613718}
     m_Modifications:
+    - target: {fileID: 1519025595224228, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_Name
       value: House_5
@@ -2775,6 +3008,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 737396934}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1
@@ -2901,6 +3138,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3023,6 +3264,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -3124,6 +3369,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -3248,6 +3497,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 42712784}
     m_Modifications:
+    - target: {fileID: 1519025595224228, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_Name
       value: House_5
@@ -3349,6 +3602,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 389328839}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1
@@ -3661,6 +3918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3779,6 +4040,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 931837977}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6
@@ -3915,6 +4180,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -4185,6 +4454,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1728978178}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (6)
@@ -4307,6 +4580,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1311853047}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (1)
@@ -4405,6 +4682,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1764539843}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (4)
@@ -4593,6 +4874,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -4766,6 +5051,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 236765009}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (3)
@@ -4919,6 +5208,303 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4460254254511972, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
   m_PrefabInstance: {fileID: 262245852}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &277426669
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 353264598}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.873055
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 50.327236
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 56.29504
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7847919637959219537, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -7519585627068469139, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -7149027345001022197, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -7023053002423717159, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -6944739178573247048, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -6683672676942498290, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -5593849839762973890, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -4840198597689380805, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -4569062645159478968, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -4360864662503531667, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -3669100278290648004, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -3351573696288654482, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -2413137324467318624, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -2160481349065752720, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -2028125009257828621, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -1195056114913605739, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -996362802623622679, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -419753056011540113, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 27419300824322060, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 635547659545568360, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Name
+      value: Goblin_Male
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2167859532812503047, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3232618689440809917, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479762353096686748, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3514316019740993454, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697026855579116000, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4981083302848916090, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5844622625683270731, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956568670211769121, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6418549295200440602, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6470204363203265959, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8335901081665613423, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8675537439560075223, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8974224307000520563, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9222997193347762956, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+--- !u!4 &277426670 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+  m_PrefabInstance: {fileID: 277426669}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &277426671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+  m_PrefabInstance: {fileID: 277426669}
+  m_PrefabAsset: {fileID: 0}
+--- !u!195 &277426672
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277426671}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 1.85
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &277426673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277426671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46e7757d883f60849b3e0fceb3173ff9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 277426672}
+  anim: {fileID: 277426674}
+  player: {fileID: 0}
+  isBaked:
+    serializedVersion: 2
+    m_Bits: 1024
+  isPlayer:
+    serializedVersion: 2
+    m_Bits: 256
+  PointToWalk: {x: 0, y: 0, z: 0}
+  radius: 6.81
+--- !u!95 &277426674
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277426671}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 42a8198f6c735e343945987c12e3231f, type: 3}
+  m_Controller: {fileID: 9100000, guid: 9e50da5d11908f748b7b7ba793dd74ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &277426675
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277426671}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.7
+  m_Height: 3.66
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.75, z: 0}
 --- !u!1 &293366800
 GameObject:
   m_ObjectHideFlags: 0
@@ -5102,6 +5688,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -5258,6 +5848,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 931837977}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (1)
@@ -5393,6 +5987,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -5511,6 +6109,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 236765009}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (5)
@@ -5695,6 +6297,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2061999513}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6
@@ -5793,6 +6399,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1211376898}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (4)
@@ -5918,6 +6528,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -6062,6 +6676,37 @@ Transform:
   m_Father: {fileID: 1737904841}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &353264597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 353264598}
+  m_Layer: 0
+  m_Name: NPC-Flo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &353264598
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353264597}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.4, y: -49.97, z: -76}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 277426670}
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &358280483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6072,6 +6717,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -6235,6 +6884,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 534941477}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (6)
@@ -6362,6 +7015,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1161831574}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6
@@ -6587,6 +7244,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -6834,6 +7495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -6956,6 +7621,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -7074,6 +7743,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 737396934}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6
@@ -7342,6 +8015,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1569231136}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (4)
@@ -7467,6 +8144,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -7606,8 +8287,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1841305467402092, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1841305467402092, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1968691057295642, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
@@ -7737,6 +8426,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 916023256}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6
@@ -7835,6 +8528,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1669184608}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (1)
@@ -8003,6 +8700,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -8226,6 +8927,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -8328,6 +9033,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -8429,6 +9138,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -8552,6 +9265,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -8650,6 +9367,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1569231136}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (3)
@@ -8823,6 +9544,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -8921,6 +9646,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1728978178}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (3)
@@ -9082,6 +9811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -9183,6 +9916,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -9379,6 +10116,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -9578,6 +10319,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -9708,6 +10453,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1728978178}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (3)
@@ -9901,6 +10650,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1764539843}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (3)
@@ -10002,6 +10755,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -10218,6 +10975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -10314,6 +11075,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -10479,6 +11244,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -10613,6 +11382,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1311853047}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1
@@ -10738,6 +11511,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -10875,6 +11652,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 534941477}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (2)
@@ -11269,6 +12050,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 534941477}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (5)
@@ -11587,6 +12372,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -11862,6 +12651,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 236765009}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (6)
@@ -11984,6 +12777,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 931837977}
     m_Modifications:
+    - target: {fileID: 1807867790344762, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1863549030409334, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
       propertyPath: m_Name
       value: House_2
@@ -12163,6 +12960,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -12413,6 +13214,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 534941477}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (4)
@@ -12678,6 +13483,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 389328839}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6
@@ -12776,6 +13585,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1311853047}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6
@@ -12874,6 +13687,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1569231136}
     m_Modifications:
+    - target: {fileID: 1519025595224228, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_Name
       value: House_5
@@ -12980,6 +13797,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1669184608}
     m_Modifications:
+    - target: {fileID: 1807867790344762, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1863549030409334, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
       propertyPath: m_Name
       value: House_2
@@ -13106,6 +13927,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -13227,6 +14052,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -13361,6 +14190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -13479,6 +14312,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 33762036}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (3)
@@ -13601,6 +14438,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 737396934}
     m_Modifications:
+    - target: {fileID: 1807867790344762, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1863549030409334, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
       propertyPath: m_Name
       value: House_2
@@ -13755,6 +14596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -13881,6 +14726,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -13999,6 +14848,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 534941477}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (2)
@@ -14155,6 +15008,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -14421,6 +15278,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -14548,6 +15409,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -14669,6 +15534,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -14792,6 +15661,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -14913,6 +15786,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -15047,6 +15924,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -15384,6 +16265,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 236765009}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (3)
@@ -15509,6 +16394,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -15816,6 +16705,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 779613718}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (3)
@@ -15989,6 +16882,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 42712784}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (3)
@@ -16085,6 +16982,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -16187,6 +17088,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -16389,6 +17294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -16487,6 +17396,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 33762036}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (5)
@@ -16613,6 +17526,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -16711,6 +17628,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 534941477}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (4)
@@ -16812,6 +17733,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -16969,6 +17894,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -17067,6 +17996,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 33762036}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (6)
@@ -17189,6 +18122,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1728978178}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (2)
@@ -17745,6 +18682,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -17974,6 +18915,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1014910425}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1
@@ -18175,6 +19120,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1211376898}
     m_Modifications:
+    - target: {fileID: 1519025595224228, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_Name
       value: House_5
@@ -18376,6 +19325,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 236765009}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (2)
@@ -18549,6 +19502,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -18953,6 +19910,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -19071,6 +20032,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 389328839}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (1)
@@ -19177,6 +20142,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -19332,6 +20301,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -19517,6 +20490,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -19635,6 +20612,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2061999513}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (1)
@@ -19896,6 +20877,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1303920306}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1
@@ -20021,6 +21006,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -20489,6 +21478,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -20592,6 +21585,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 534941477}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (1)
@@ -20713,6 +21710,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -20831,6 +21832,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 33762036}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (3)
@@ -20932,6 +21937,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -21067,6 +22076,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -21185,6 +22198,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1728978178}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (2)
@@ -21311,6 +22328,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -21429,6 +22450,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 33762036}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (4)
@@ -21530,6 +22555,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -21808,6 +22837,133 @@ Transform:
   m_Father: {fileID: 42712784}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1449552042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1449552044}
+  - component: {fileID: 1449552043}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1449552043
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449552042}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 2773710b17d39db45aab4081069f8b03, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 66
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1449552044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449552042}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.45, y: 1.9, z: 1.112}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1454962219
 GameObject:
   m_ObjectHideFlags: 0
@@ -21958,6 +23114,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -22212,7 +23372,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510256203}
   m_LocalRotation: {x: -0.70698094, y: 0.0018521446, z: 0.0018502492, w: 0.70722777}
-  m_LocalPosition: {x: -132.8, y: 0.62, z: 23.3}
+  m_LocalPosition: {x: -26.9, y: 0.62, z: 23.3}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children:
   - {fileID: 191900418}
@@ -22294,6 +23454,10 @@ PrefabInstance:
     - target: {fileID: 8418009314088770908, guid: 021cac7915726eb4c849c3c16ebe90bb, type: 3}
       propertyPath: m_TagString
       value: IsGround
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418009314088770908, guid: 021cac7915726eb4c849c3c16ebe90bb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 021cac7915726eb4c849c3c16ebe90bb, type: 3}
@@ -22382,6 +23546,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -22505,6 +23673,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -22607,6 +23779,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -22708,6 +23884,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -22932,6 +24112,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -23050,6 +24234,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1161831574}
     m_Modifications:
+    - target: {fileID: 1807867790344762, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1863549030409334, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
       propertyPath: m_Name
       value: House_2
@@ -23493,6 +24681,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -23594,6 +24786,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -23756,6 +24952,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -23857,6 +25057,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -24039,6 +25243,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 33762036}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (1)
@@ -24165,6 +25373,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -24288,6 +25500,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 534941477}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (3)
@@ -24755,6 +25971,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 236765009}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (2)
@@ -24881,6 +26101,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -25002,6 +26226,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -25383,6 +26611,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 916023256}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (1)
@@ -25502,7 +26734,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1655269967}
   m_LocalRotation: {x: 0.093023285, y: 0.0000000023999371, z: 2.2421764e-10, w: 0.99566394}
-  m_LocalPosition: {x: -78.83984, y: 4.554883, z: -27.83326}
+  m_LocalPosition: {x: 27.06016, y: 4.554883, z: -27.83326}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1944536890}
@@ -25688,7 +26920,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673349639}
   m_LocalRotation: {x: -0.0000000037252903, y: -0.000000001540787, z: -1.8535173e-13, w: 1}
-  m_LocalPosition: {x: -78.83984, y: 4.554883, z: -27.83326}
+  m_LocalPosition: {x: 27.06016, y: 4.554883, z: -27.83326}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2033622142}
@@ -25955,6 +27187,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -26149,6 +27385,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -26292,6 +27532,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -26443,6 +27687,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1669184608}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1
@@ -26569,6 +27817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -26690,6 +27942,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -26851,6 +28107,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -27041,6 +28301,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -27480,6 +28744,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1728978178}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (1)
@@ -27607,6 +28875,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 737396934}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (1)
@@ -27708,6 +28980,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -27972,6 +29248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -28070,6 +29350,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1728978178}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (5)
@@ -28508,6 +29792,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1728978178}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (4)
@@ -28737,6 +30025,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -28835,6 +30127,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1102130995}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6
@@ -28928,6 +30224,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 33762036}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (2)
@@ -29026,6 +30326,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1161831574}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1
@@ -29148,6 +30452,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1014910425}
     m_Modifications:
+    - target: {fileID: 1807867790344762, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1863549030409334, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
       propertyPath: m_Name
       value: House_2
@@ -29330,6 +30638,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 33762036}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (2)
@@ -29452,6 +30764,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 236765009}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (4)
@@ -29550,6 +30866,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1728978178}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (4)
@@ -29734,6 +31054,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 779613718}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (4)
@@ -30060,6 +31384,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -30158,6 +31486,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1303920306}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (1)
@@ -30259,6 +31591,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -30444,6 +31780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -30562,6 +31902,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1014910425}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (1)
@@ -30789,6 +32133,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 931837977}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1
@@ -30915,6 +32263,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -31036,6 +32388,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -31401,6 +32757,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1014910425}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6
@@ -31535,6 +32895,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2061999513}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1
@@ -31661,6 +33025,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -31754,6 +33122,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 33762036}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (4)
@@ -31946,6 +33318,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114429509425662, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -32044,6 +33420,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1102130995}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1
@@ -32161,6 +33541,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 236765009}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (1)
@@ -32361,6 +33745,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1161831574}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (1)
@@ -32462,6 +33850,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
@@ -32616,6 +34008,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1489999542795002, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -32734,6 +34130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 916023256}
     m_Modifications:
+    - target: {fileID: 1807867790344762, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1863549030409334, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
       propertyPath: m_Name
       value: House_2
@@ -32848,6 +34248,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1102130995}
     m_Modifications:
+    - target: {fileID: 1005750724160876, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (1)
@@ -32941,6 +34345,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2061999513}
     m_Modifications:
+    - target: {fileID: 1807867790344762, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1863549030409334, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
       propertyPath: m_Name
       value: House_2
@@ -33055,6 +34463,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 42712784}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (4)
@@ -33172,6 +34584,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 389328839}
     m_Modifications:
+    - target: {fileID: 1807867790344762, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1863549030409334, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
       propertyPath: m_Name
       value: House_2
@@ -33286,6 +34702,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 916023256}
     m_Modifications:
+    - target: {fileID: 1697788996997588, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1
