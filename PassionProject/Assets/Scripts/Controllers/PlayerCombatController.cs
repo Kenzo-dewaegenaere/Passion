@@ -22,14 +22,19 @@ public class PlayerCombatController : MonoBehaviour
 
     private int enemyHp;
 
+    [Header("Animation")]
+    public Animator animator;
+
 
     public float cooldown = 1f; //seconds
     private float lastAttackedAt = -9999f;
-    public float spellCooldown = 2f; 
-    void Start()
+    public float spellCooldown = 2f;
+
+
+    void Awake()
     {
-        //get the health
-        //currentEnemyHealth = playerHealth.GetComponent<NpcAiController>();
+        animator = GetComponent<Animator>();
+
     }
 
 
@@ -44,6 +49,8 @@ public class PlayerCombatController : MonoBehaviour
         //if in fight range run code
         if (playerInFightRange)
         {
+
+            
             Collider[] hitColliders = Physics.OverlapSphere(transform.position, inAttackRange, isEnemy);
             foreach (var hitCollider in hitColliders)
             {
@@ -60,7 +67,8 @@ public class PlayerCombatController : MonoBehaviour
                    
                     if (Time.time > lastAttackedAt + cooldown)
                     {
-                        Debug.Log("att");
+                        //animator.Play("CharacterArmature|Punch");
+
                         enemyHealth.DoDamage();
                         Debug.Log(enemyHealth.currentEnemyHealth);
                         lastAttackedAt = Time.time;
@@ -77,7 +85,7 @@ public class PlayerCombatController : MonoBehaviour
                         if (Time.time > lastAttackedAt + spellCooldown)
                         {
                             rb.isKinematic = false;
-                            rb.AddForce(transform.forward * 10, ForceMode.Impulse);
+                            rb.AddForce(transform.forward * 100, ForceMode.Impulse);
                             enemyHealth.Kill();
                             lastAttackedAt = Time.time;
 
@@ -121,7 +129,7 @@ public class PlayerCombatController : MonoBehaviour
                     if (Time.time > lastAttackedAt + spellCooldown)
                     {
                         rb.isKinematic = false;
-                        rb.AddForce(transform.forward * 10, ForceMode.Impulse);
+                        rb.AddForce(transform.forward * 100, ForceMode.Impulse);
                         enemyHealth.Kill();
                         lastAttackedAt = Time.time;
 

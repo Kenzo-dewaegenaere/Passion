@@ -9,7 +9,7 @@ public class GoNextScene : MonoBehaviour
     public void NextScene()
     {
         NextSceneUI.SetActive(true);
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
 
     }
 }

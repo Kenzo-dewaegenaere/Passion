@@ -11,14 +11,14 @@ public class AudioController : MonoBehaviour
     private Dictionary<string, Action> keywordActions = new Dictionary<string, Action>();
     private KeywordRecognizer keywordRecognizer;
 
-   // private PlayerCombatController spells;
+    private PlayerCombatController spells;
     public GameObject spellcast;
     void Start()
     {
 
-        //spells = spellcast.GetComponent<PlayerCombatController>();
+        spells = spellcast.GetComponent<PlayerCombatController>();
         //Add keywords and set them to a function
-        keywordActions.Add("test", Test);
+        keywordActions.Add("Forfeit", Surrender);
 
 
         //put all the keywords in an array for easy acces, this way we don't need switch cases etc. 
@@ -39,9 +39,9 @@ public class AudioController : MonoBehaviour
         
     }
 
-    private void Test()
+    private void Surrender()
     {
-        //spells.TestSpell();
-        Debug.Log("test has been said");
+        spells.TestSpell();
+        Debug.Log("Surrender has been said");
     }
 }

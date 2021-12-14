@@ -12,8 +12,9 @@ public class SceneController : MonoBehaviour
 
     void Awake()
     {
-       // GraphicsSettings.renderPipelineAsset = exampleAssetA;
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
 
     public void NextScene()
     {

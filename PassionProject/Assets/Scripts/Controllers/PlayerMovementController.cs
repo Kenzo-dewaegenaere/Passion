@@ -54,10 +54,11 @@ public class PlayerMovementController : MonoBehaviour
     void Update()
     {
         OpenChest();
+        calculateMovement();
     }
     void LateUpdate()
     {
-        calculateMovement();
+        
        
 
 

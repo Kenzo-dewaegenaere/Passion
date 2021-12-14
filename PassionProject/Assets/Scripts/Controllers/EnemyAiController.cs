@@ -163,7 +163,7 @@ public class EnemyAiController : MonoBehaviour
         //attack delay
         if (Time.time > lastAttackedAt + cooldown)
         {
-            anim.Play("CharacterArmature|Punch");
+            //anim.Play("CharacterArmature|Punch");
             //currentPlayerHealth.currentPlayerHealth -= damage;
             lastAttackedAt = Time.time;
         }
@@ -182,7 +182,7 @@ public class EnemyAiController : MonoBehaviour
     {
 
         dead = true;
-        anim.Play("Dead00");
+        anim.Play("CharacterArmature|Death");
         Destroy(gameObject, 2);
 
     }
