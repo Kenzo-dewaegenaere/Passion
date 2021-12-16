@@ -15,6 +15,9 @@ public class PostProcessingController : MonoBehaviour
 
     public GameObject State;
     public GameObject HelpState;
+
+    public GameObject Chests;
+
     public GameObject interactionText;
 
     public Volume vol;
@@ -59,6 +62,11 @@ public class PostProcessingController : MonoBehaviour
                 HelpState.gameObject.SetActive(true);
             }
 
+            if (AmountEated > .09f)
+            {
+                Chests.gameObject.SetActive(true);
+            }
+
         }
         else
         {
@@ -76,7 +84,12 @@ public class PostProcessingController : MonoBehaviour
 
                 State.transform.GetChild(0).gameObject.SetActive(false);
                 State.transform.GetChild(1).gameObject.SetActive(false);
+                
                 AmountEated = 0f;
+
+                Chests.gameObject.SetActive(false);
+
+
 
             }
 

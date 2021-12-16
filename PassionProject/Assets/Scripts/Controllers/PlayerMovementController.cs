@@ -49,10 +49,14 @@ public class PlayerMovementController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
+
+        
+        //Cursor.visible = false;
     }
 
     void Update()
     {
+        Cursor.lockState = CursorLockMode.Confined;
         OpenChest();
         calculateMovement();
     }

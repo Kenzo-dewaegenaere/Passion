@@ -78,22 +78,17 @@ public class NpcConversation : MonoBehaviour
 
                 if (!intro)
                 {
-
                     interacting = false;
                     audio.PlayOneShot(Intro);
-
                     npcText.SetActive(false);
-
-                    
                     intro = true;
-
                     //dialogue handling
                     First.SetActive(true);
                     Second.SetActive(false);
                     Last.SetActive(false);
                   
                 }
-                else if (intro && !IsPlayed && !IsFound.GetComponent<PlayerMovementController>().getBool())
+                else if (!audio.isPlaying && intro && !IsPlayed && !IsFound.GetComponent<PlayerMovementController>().getBool())
                 {
 
                     audio.PlayOneShot(Tips);

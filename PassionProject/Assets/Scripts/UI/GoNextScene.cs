@@ -9,5 +9,7 @@ public class GoNextScene : MonoBehaviour
     public void NextScene()
     {
         NextSceneUI.SetActive(true);
+        //Cursor.lockState = CursorLockMode.Confined;
+        //Cursor.visible = true;
     }
 }
