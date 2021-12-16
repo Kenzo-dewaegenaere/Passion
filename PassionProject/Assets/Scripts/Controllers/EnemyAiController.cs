@@ -41,6 +41,10 @@ public class EnemyAiController : MonoBehaviour
     public float cooldown = 1.5f; //seconds
     private float lastAttackedAt = -9999f;
 
+
+
+    public GameObject MenuSceneUI;
+
     private void Awake()
     {
 
@@ -94,6 +98,11 @@ public class EnemyAiController : MonoBehaviour
             dead = true;
             anim.Play("CharacterArmature|Death");
             Destroy(gameObject, 2);
+        }
+
+        if (dead)
+        {
+            MenuSceneUI.SetActive(true);
         }
 
     }

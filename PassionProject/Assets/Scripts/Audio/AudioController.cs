@@ -13,12 +13,15 @@ public class AudioController : MonoBehaviour
 
     private PlayerCombatController spells;
     public GameObject spellcast;
+
+
     void Start()
     {
 
         spells = spellcast.GetComponent<PlayerCombatController>();
         //Add keywords and set them to a function
         keywordActions.Add("Forfeit", Surrender);
+        keywordActions.Add("Surrender", Surrender);
 
 
         //put all the keywords in an array for easy acces, this way we don't need switch cases etc. 
@@ -33,15 +36,10 @@ public class AudioController : MonoBehaviour
         keywordActions[args.text].Invoke();
     }
 
-
-    void Update()
-    {
-        
-    }
-
     private void Surrender()
     {
         spells.TestSpell();
-        Debug.Log("Surrender has been said");
     }
+
+
 }

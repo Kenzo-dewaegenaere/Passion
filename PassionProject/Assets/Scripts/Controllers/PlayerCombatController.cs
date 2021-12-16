@@ -31,6 +31,7 @@ public class PlayerCombatController : MonoBehaviour
     public float spellCooldown = 2f;
 
 
+
     void Awake()
     {
         animator = GetComponent<Animator>();
@@ -67,8 +68,6 @@ public class PlayerCombatController : MonoBehaviour
                    
                     if (Time.time > lastAttackedAt + cooldown)
                     {
-                        //animator.Play("CharacterArmature|Punch");
-
                         enemyHealth.DoDamage();
                         Debug.Log(enemyHealth.currentEnemyHealth);
                         lastAttackedAt = Time.time;
