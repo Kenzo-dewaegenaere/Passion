@@ -3596,7 +3596,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -585, y: 1021}
+  m_AnchoredPosition: {x: -585, y: 860}
   m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &321946169
@@ -4813,7 +4813,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 223}
+  m_AnchoredPosition: {x: 0, y: 50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &466596083
@@ -4849,7 +4849,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -585, y: 1021}
+  m_AnchoredPosition: {x: -585, y: 860}
   m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &468287097
@@ -10168,13 +10168,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 910840739}
   anim: {fileID: 910840741}
-  player: {fileID: 267401292}
   isBaked:
     serializedVersion: 2
     m_Bits: 1024
-  isPlayer:
-    serializedVersion: 2
-    m_Bits: 256
   PointToWalk: {x: 0, y: 0, z: 0}
   radius: 12
 --- !u!195 &910840739
@@ -18327,7 +18323,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534432371}
-  m_LocalRotation: {x: 0.09800144, y: 0.0033463887, z: -0.00032953912, w: 0.9951806}
+  m_LocalRotation: {x: 0.09800144, y: 0.003346424, z: -0.00032954256, w: 0.9951806}
   m_LocalPosition: {x: 0.87256813, y: 3.3345592, z: -12.264411}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -20239,7 +20235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -585, y: 1021}
+  m_AnchoredPosition: {x: -585, y: 860}
   m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1643642424
@@ -21347,7 +21343,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774039345}
-  m_LocalRotation: {x: 0.098001435, y: 0.0033463899, z: -0.00032953918, w: 0.9951806}
+  m_LocalRotation: {x: 0.098001435, y: 0.0033464252, z: -0.00032954267, w: 0.9951806}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

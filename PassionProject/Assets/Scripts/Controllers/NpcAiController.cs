@@ -9,8 +9,7 @@ public class NpcAiController : MonoBehaviour
     //public values for my npc , animation and player direction
     public NavMeshAgent agent;
     public Animator anim;
-    public Transform player;
-    public LayerMask isBaked, isPlayer;
+    public LayerMask isBaked;
 
     //Layermask to declare where you can walk
     public Vector3 PointToWalk;
@@ -31,12 +30,10 @@ public class NpcAiController : MonoBehaviour
        
     }
 
-    private void Update()
+    void Update()
     {
 
         Wandering();
-        //anim.Play("Idle01");
-        //transform.LookAt(player);
 
     }
 
@@ -78,7 +75,7 @@ public class NpcAiController : MonoBehaviour
 
 
         //if the given walk point is on the walkable ground, set it to true
-        if (Physics.Raycast(PointToWalk, -transform.up, 2f, isBaked))
+        if (Physics.Raycast(PointToWalk, -transform.up, 4f, isBaked))
         {
             WalkPointPosition = true;
         }
