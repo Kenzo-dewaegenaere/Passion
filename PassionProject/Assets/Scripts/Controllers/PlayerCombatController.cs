@@ -30,7 +30,7 @@ public class PlayerCombatController : MonoBehaviour
     private float lastAttackedAt = -9999f;
     public float spellCooldown = 2f;
 
-
+    public AudioClip Final;
 
     void Awake()
     {
@@ -41,6 +41,8 @@ public class PlayerCombatController : MonoBehaviour
 
     private void Update()
     {
+
+
 
         //if in fight range set to true
         playerInFightRange = Physics.CheckSphere(transform.position, inAttackRange, isEnemy);
@@ -60,16 +62,23 @@ public class PlayerCombatController : MonoBehaviour
                 GameObject enemy = hitCollider.gameObject;
                
                 EnemyAiController enemyHealth = enemy.GetComponent<EnemyAiController>();
+                AudioSource audio = GetComponent<AudioSource>();
+
+                if (enemyHealth.currentEnemyHealth == 0 && !audio.isPlaying)
+                {
+
+                    Debug.Log(enemyHealth.currentEnemyHealth);
+                    audio.PlayOneShot(Final);
+                }
 
 
-
-                if(Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButtonDown(0))
                 {
                    
                     if (Time.time > lastAttackedAt + cooldown)
                     {
                         enemyHealth.DoDamage();
-                        Debug.Log(enemyHealth.currentEnemyHealth);
+                       
                         lastAttackedAt = Time.time;
                         
                     }
@@ -102,8 +111,7 @@ public class PlayerCombatController : MonoBehaviour
         }
         else
         {
-            //if in not fight range
-            //Debug.Log("not attackable");
+
         }
 
 
@@ -124,7 +132,9 @@ public class PlayerCombatController : MonoBehaviour
                 GameObject enemy = hitCollider.gameObject;
                 EnemyAiController enemyHealth = enemy.GetComponent<EnemyAiController>();
 
-                    Rigidbody rb = enemy.GetComponent<Rigidbody>();
+               
+
+                Rigidbody rb = enemy.GetComponent<Rigidbody>();
                     if (Time.time > lastAttackedAt + spellCooldown)
                     {
                         rb.isKinematic = false;
@@ -137,8 +147,7 @@ public class PlayerCombatController : MonoBehaviour
         }
         else
         {
-            //if in not fight range
-            //Debug.Log("not attackable");
+
         }
     }
 

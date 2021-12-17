@@ -7,7 +7,22 @@ using UnityEngine.Rendering;
 
 public class SceneController : MonoBehaviour
 {
-    public void NextScene()
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            if (SceneManager.GetActiveScene().buildIndex == 3)
+            {
+                GoMenu();
+            }
+            else
+            {
+                NextScene();
+            }
+        }
+    }
+        public void NextScene()
     {
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

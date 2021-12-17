@@ -45,6 +45,9 @@ public class EnemyAiController : MonoBehaviour
 
     public GameObject MenuSceneUI;
 
+
+    
+
     private void Awake()
     {
 
@@ -70,7 +73,7 @@ public class EnemyAiController : MonoBehaviour
         if (currentEnemyHealth <= 0)
         {
             dead = true;
-            Debug.Log("im dead");
+           
             anim.Play("CharacterArmature|Death");
             Destroy(gameObject, 2);
         }
@@ -97,7 +100,7 @@ public class EnemyAiController : MonoBehaviour
         {
             dead = true;
             anim.Play("CharacterArmature|Death");
-            Destroy(gameObject, 2);
+            Destroy(gameObject, 5);
         }
 
         if (dead)
@@ -189,10 +192,10 @@ public class EnemyAiController : MonoBehaviour
 
     public void Kill()
     {
-
+        
         dead = true;
         anim.Play("CharacterArmature|Death");
-        Destroy(gameObject, 2);
+        Destroy(gameObject, 5);
 
     }
 
